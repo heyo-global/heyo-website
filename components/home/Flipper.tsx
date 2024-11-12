@@ -9,11 +9,11 @@ const Flipper = ({ front, back }: { front: number; back: number }) => {
   const [backTextFromData, setBackTextFromData] = useState(1);
 
   useEffect(() => {
-    if (front != back) {
-      setFlipping(true);
-    }
+    // if (front != back) {
+    // }
+    setFlipping(true);
     setFrontTextFromData(front);
-  }, [front, back]);
+  }, [front]);
 
   useEffect(() => {
     setBackTextFromData(back);

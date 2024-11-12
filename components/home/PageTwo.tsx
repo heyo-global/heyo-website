@@ -14,13 +14,13 @@ const PageTwo = () => {
   const [cityCount, setCityCount] = useLocalStorageState<number>(
     "heyo-cityCount",
     {
-      defaultValue: 100,
+      defaultValue: 0,
     }
   );
   const [spotCount, setSpotCount] = useLocalStorageState<number>(
     "heyo-spotCount",
     {
-      defaultValue: 2500,
+      defaultValue: 0,
     }
   );
   const { data, run } = useStatistics();
@@ -31,7 +31,7 @@ const PageTwo = () => {
 
   return (
     <div className="w-full h-screen overflow-hidden relative flex justify-center items-center md:flex-row flex-col bg-theme-color">
-      <HeaderTwo />
+     {isMobile && <HeaderTwo />} 
       <img
         src="/bg-light.svg"
         className=" w-full h-screen absolute bottom-0 left-0 z-[6] img-disabled"
@@ -59,8 +59,8 @@ const PageTwo = () => {
         
         {inViewport && data && (
           <Citites
-            start={cityCount || 100}
-            end={data?.city_num || cityCount}
+            start={ cityCount || data.city_num - 20 || 100}
+            end={data.city_num || cityCount}
             onFinish={() => {
               setCityCount(data.city_num);
             }}
@@ -76,8 +76,8 @@ const PageTwo = () => {
       
         {inViewport && data && (
           <FilpClock
-            start={spotCount || 2500}
-            end={data?.point_num || spotCount}
+            start={spotCount || data.point_num - 30 || 2500}
+            end={data.point_num || spotCount}
             onFinish={() => {
               setSpotCount(data.point_num)
             }}

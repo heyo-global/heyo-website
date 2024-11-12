@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Nunito"; 
+  src: url("/Nunito-VariableFont_wght.ttf") format("woff"),
+    url("/Nunito-VariableFont_wght.ttf") format("opentype"),
+    url("/Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -51,7 +59,7 @@ body {
   overflow-x: hidden; 
   padding: 0;
   margin: 0;
-  /* font-family: 'Montserrat', sans-serif !important; */
+  font-family: 'Nunito', sans-serif !important;
 }
 
 body {
@@ -140,7 +148,7 @@ html {
 .line {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, #FFEA00 211%);
+  background: linear-gradient(-180deg, rgba(0, 255, 51, 0) 43%, #FFEA00 211%);
   border-bottom: 3px solid #FFEA00;
   transform: translateY(-100%);
   animation: radar-beam 3.6s infinite;
