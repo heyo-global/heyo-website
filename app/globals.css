@@ -116,3 +116,26 @@ html {
   background-color: black;
 }
  
+@keyframes radar-beam {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+.line {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, #FFEA00 211%);
+  border-bottom: 3px solid #FFEA00;
+  transform: translateY(-100%);
+  animation: radar-beam 3.6s infinite;
+  animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
+  /* animation-delay: 3s; */
+}

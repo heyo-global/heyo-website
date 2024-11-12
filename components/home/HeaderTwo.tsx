@@ -18,14 +18,14 @@ const Header = () => {
       <div className="flex-grow"></div>
       <div className="flex flex-row-reverse items-center gap-4 md:gap-6">
         <Link
-          href="https://twitter.com/ebunker_eth"
+          href="https://x.com/HeyoPlanet"
           target="_blank"
           rel="noreferrer"
         >
           <Image src="/icon-x-black.svg" alt="X" className="w-[3.2vw] h-[3.2vw] md:w-[1.8vw] md:h-[1.8vw]" />
         </Link>
         <Link
-          href="https://discord.gg/nuvw6hmvnK"
+          href="https://t.me/HeyoPlanetBot"
           target="_blank"
           rel="noreferrer"
         >

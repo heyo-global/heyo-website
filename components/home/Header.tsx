@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex-grow"></div>
       <div className="flex flex-row-reverse items-center gap-4 md:gap-6">
         <Link
-          href="https://twitter.com/ebunker_eth"
+          href="https://x.com/HeyoPlanet"
           target="_blank"
           rel="noreferrer"
         >
@@ -29,7 +29,7 @@ const Header = () => {
           />
         </Link>
         <Link
-          href="https://discord.gg/nuvw6hmvnK"
+          href="https://t.me/HeyoPlanetBot"
           target="_blank"
           rel="noreferrer"
         >
