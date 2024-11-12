@@ -20,7 +20,7 @@ const PageOne = () => {
         <img src="/Hotspots-01.svg" alt="" className="idelay-700 absolute top-[112vw] left-[68vw] z-[300] w-[10vw] h-[16vw] marker6 md:top-[32vw] md:left-[68vw] md:w-[5.1vw] md:h-[8.2vw]"/>
       </div>
 
-      <div className="font-[800] text-[10.67vw] leading-[12.8vw] left-[16px] md:text-[6.6vw] text-[#FFEA00] md:leading-[8vw] md:left-[4.4vw] absolute -top-[44vw] md:top-0 h-screen z-10 flex flex-col justify-center">
+      <div className="font-[800] text-[10.67vw] leading-[12.8vw] bg-red-100 left-[16px] md:text-[6.6vw] text-[#FFEA00] md:leading-[8vw] md:left-[4.4vw] absolute -top-[44vw] md:top-0 h-screen z-10 flex flex-col justify-center">
         <div>Social Network</div>
         <div className="flex items-center gap-[3vw]">
           <span>Based On</span>

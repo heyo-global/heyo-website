@@ -58,6 +58,14 @@ body {
   color: rgb(var(--foreground-rgb));
   background: black !important;
 }
+ 
+div,span,p,ul,li{
+  user-select: none;  
+  -ms-user-select: none; 
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+}
 
 a {
   color: inherit;
