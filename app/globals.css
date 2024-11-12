@@ -139,3 +139,9 @@ html {
   animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
   /* animation-delay: 3s; */
 }
+
+.img-disabled{
+  touch-action: pan-y;/* 除了上下滑动，禁用其他手势 */
+  -webkit-touch-callout: none;// 禁止长按图片保存
+  pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+}

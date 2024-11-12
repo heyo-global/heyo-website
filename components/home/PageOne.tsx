@@ -15,7 +15,10 @@ const PageOne = () => {
 
       <div className="font-[800] text-[10.67vw] leading-[12.8vw] left-[16px] md:text-[6.6vw] text-[#FFEA00] md:leading-[8vw] md:left-[4.4vw] absolute -top-[44vw] md:top-0 h-screen z-10 flex flex-col justify-center">
         <div>Social Network</div>
-        <div>Based On</div>
+        <div className="flex items-center gap-[3vw]">
+          <span>Based On</span>
+          <img src="/icon-map.png" className="w-[10.9vw] h-[6.4vw]" alt="" />
+        </div>
         <div>Real-World</div>
         <div>Location</div>
       </div>

@@ -8,7 +8,7 @@ const Header = () => {
       <div className="flex items-center gap-2 shrink-0 ">
         <Image
           src={"/title.svg"}
-          className="w-[56px] h-[55px] md:w-[10.1vw] md:h-[3.1vw]"
+          className="w-[56px] h-[55px] md:w-[10.1vw] md:h-[3.1vw] img-disabled"
           alt="Logo"
         />
         {/* <span className="md:text-[1.67vw] font-[500] text-theme-color">
@@ -25,7 +25,7 @@ const Header = () => {
           <Image
             src="/icon-x.svg"
             alt="X"
-            className="w-[3.2vw] h-[3.2vw] md:w-[1.8vw] md:h-[1.8vw]"
+            className="w-[3.2vw] h-[3.2vw] md:w-[1.8vw] md:h-[1.8vw] img-disabled"
           />
         </Link>
         <Link
@@ -36,7 +36,7 @@ const Header = () => {
           <Image
             src="/icon-t.svg"
             alt="T"
-            className="w-[3.4vw] h-[3.4vw] md:w-[2vw] md:h-[2vw]"
+            className="w-[3.4vw] h-[3.4vw] md:w-[2vw] md:h-[2vw] img-disabled"
           />
         </Link>
       </div>

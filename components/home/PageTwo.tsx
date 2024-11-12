@@ -8,19 +8,19 @@ const PageTwo = () => {
       <HeaderTwo />
       <img
         src="/bg-light.svg"
-        className="w-full h-screen absolute bottom-0 left-0 z-[1]"
+        className="w-full h-screen absolute bottom-0 left-0 z-[1] img-disabled"
         alt=""
       />
 
       <img
         src="/image-footer.png"
-        className="w-full h-[22.2vw] hidden md:absolute bottom-0 left-0 z-[2]"
+        className="w-full h-[22.2vw] hidden md:absolute bottom-0 left-0 z-[2] img-disabled"
         alt=""
       />
 
       <img
         src="/image-footer-phone.png"
-        className="w-full h-[32.27vw] md:hidden absolute bottom-0 left-0 z-[2]"
+        className="w-full h-[32.27vw] md:hidden absolute bottom-0 left-0 z-[2] img-disabled"
         alt=""
       />
 
