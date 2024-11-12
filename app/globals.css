@@ -159,6 +159,22 @@ html {
       transform: translateY(-10%);
   }
 }
-.marker{
+.marker1{
+  animation: marker-animation 6s infinite;
+}
+.marker2{
+  animation: marker-animation 3s infinite;
+}
+.marker3{
+  animation: marker-animation 2s infinite;
+}
+.marker4{
   animation: marker-animation 1s infinite;
 }
+.marker5{
+  animation: marker-animation 4s infinite;
+}
+.marker6{
+  animation: marker-animation 5s infinite;
+}
+ 
