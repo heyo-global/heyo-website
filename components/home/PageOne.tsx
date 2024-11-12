@@ -24,7 +24,7 @@ const PageOne = () => {
         <div>Social Network</div>
         <div className="flex items-center gap-[3vw]">
           <span>Based On</span>
-          <img src="/icon-map.png" className="w-[10.9vw] h-[6.4vw]" alt="" />
+          <img src="/icon-map.png" className="img-disabled w-[10.9vw] h-[6.4vw]" alt="" />
         </div>
         <div>Real-World</div>
         <div>Location</div>
@@ -34,7 +34,7 @@ const PageOne = () => {
         <img
           alt=""
           src="/image-line.svg"
-          className="w-full h-full md:w-full md:h-[56.8vw]"
+          className="img-disabled w-full h-full md:w-full md:h-[56.8vw]"
         />
       </div>
 
