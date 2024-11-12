@@ -5,8 +5,10 @@ import Citites from "./Citites";
 import FilpClock from "./Spots";
 import { useInViewport, useLocalStorageState } from "ahooks";
 import { useStatistics } from "@/hooks/useApi";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const PageTwo = () => {
+  const {isMobile} = useWindowSize();
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
   const [cityCount, setCityCount] = useLocalStorageState<number>(
@@ -28,7 +30,7 @@ const PageTwo = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen relative flex justify-center items-center md:flex-row flex-col bg-theme-color">
+    <div className="w-full h-screen overflow-hidden relative flex justify-center items-center md:flex-row flex-col bg-theme-color">
       <HeaderTwo />
       <img
         src="/bg-light.svg"
@@ -48,12 +50,11 @@ const PageTwo = () => {
         alt=""
       />
 
-      <Phone />
-      <div className=" absolute top-[10vw]"></div>
-
+     {isMobile &&  <Phone />}
+      
       <div
         ref={ref}
-        className="md:min-w-[29.2vw] md:h-[18.3vw] px-[20px] min-w-[60.3vw] h-[35.7vw] -mt-[36vw] md:-mt-[8vw] rounded-[3.2vw] flex flex-col justify-center items-center bg-[#F1DE00] md:rounded-[1.56vw] relative z-[5] gap-2"
+        className="md:min-w-[29.2vw] md:h-[18.3vw] px-[20px] min-w-[60.3vw] h-[35.7vw] -mt-[36vw] md:-mt-[18vw] rounded-[3.2vw] flex flex-col justify-center items-center bg-[#F1DE00] md:rounded-[1.56vw] relative z-[5] gap-2"
       >
         
         {inViewport && data && (
@@ -71,7 +72,7 @@ const PageTwo = () => {
         <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
       </div>
 
-      <div className="md:min-w-[36.7vw] md:h-[18.3vw] md:ml-[5vw] min-w-[74.67vw] h-[35.7vw] px-[20px] mt-[6vw]  md:-mt-[8vw] flex flex-col justify-center items-center bg-[#221F00] md:rounded-[1.56vw] rounded-[3.2vw] relative z-[5]">
+      <div className="md:min-w-[36.7vw] md:h-[18.3vw] md:ml-[5vw] min-w-[74.67vw] h-[35.7vw] px-[20px] mt-[6vw]  md:-mt-[18vw] flex flex-col justify-center items-center bg-[#221F00] md:rounded-[1.56vw] rounded-[3.2vw] relative z-[5]">
       
         {inViewport && data && (
           <FilpClock

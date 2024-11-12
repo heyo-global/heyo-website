@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="md:h-[6.0vw] h-[11.5vw] absolute left-0 right-0 top-0 z-[100] text-xs flex items-center justify-between bg-transparent backdrop-blur  px-[4.3vw] md:px-[1.88vw]">
+    <div className="md:h-[6.0vw] h-[11.5vw] absolute left-0 right-0 top-0 z-[100] text-xs flex md:hidden items-center justify-between bg-transparent backdrop-blur  px-[4.3vw] md:px-[1.88vw]">
       <div className="flex items-center gap-2 shrink-0 ">
         <img
           src={"/title-black.svg"}
