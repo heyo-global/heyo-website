@@ -2,40 +2,36 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
-.FlipTimeClock .M-Flipper {
-  margin: 0 1px;
-}
-
-.FlipTimeClock .unit {
-  display: inline-block;
-  /* padding-left: 4px;  */
-  font-size: 16px;
-  color: #000;
-  opacity: 1;
-  font-style: 300;
-}
+/* .FlipTimeClock .M-Flipper {
+  margin: 0 20px;
+} */
 
 .FlipTimeClock .M-Flipper {
   display: inline-block;
   position: relative;
-  width: 18px;
-  height: 20px;
-  line-height: 20px;
-  border: solid 1px #FFFFFF0D;
-  border-radius: 4px;
-  background: #202224;
-  font-size: 12px;
-  color: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  text-align: center; 
+  width: 6.88vw;
+  height: 11.4vw;
+  line-height: 11.4vw;
+  /* border: solid 1px #FFFFFF0D; */
+  border-radius: 6px;
+  background: #171500;
+  font-size: 8.3vw;
+  color: #ffea00;
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .FlipTimeClock .M-Flipper {
-    font-size: 14px;
+    font-size: 16vw;
+    width: 15.5vw;
+    height: 21.8vw;
+    line-height: 21.8vw; 
   }
+  
 }
 
 .FlipTimeClock .M-Flipper .digital:before,
@@ -44,7 +40,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  background: #202224;
+  background: #171500;
   overflow: hidden;
   box-sizing: border-box;
 }

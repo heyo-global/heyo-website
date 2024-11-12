@@ -2,7 +2,7 @@ import { API_ERROR_CODES, BizError, PageError } from "./apiErrorCodes";
 import { HttpError } from "./apiErrorCodes";
 
 export const getHost = () => {
-  return "http://test-api.redaprotocol.com";
+  return process.env.NEXT_PUBLIC_API_ROOT;
 };
 
 export const fetcher = (t: any, api: string, args: any) => {

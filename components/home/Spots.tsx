@@ -13,7 +13,7 @@ const formatData = (end: number) => {
   return backArr;
 };
 
-const Cities = ({
+const Spots = ({
   start,
   end,
   onFinish,
@@ -24,8 +24,9 @@ const Cities = ({
 }) => {
   const [fronts, setFronts] = useState<number[]>([]);
   const [backs, setBacks] = useState<number[]>([]);
-  useEffect(() => { 
-    let startValue = start > 100 ? start : 100;
+  useEffect(() => {
+    
+    let startValue = start > 1000 ? start : 1000;
     let endValue = startValue ;
     let frontArr: number[] = formatData(startValue);
     let backArr: number[] = formatData(endValue);
@@ -49,7 +50,7 @@ const Cities = ({
   }, []);
 
   return (
-    <div className="cities md:gap-[20px] gap-[10px]">
+    <div className="FlipTimeClock md:gap-[20px] gap-[10px]">
       {fronts.map((item: number, index: number) => (
         <Flipper front={item} back={backs[index]} />
       ))}
@@ -57,4 +58,4 @@ const Cities = ({
   );
 };
 
-export default React.memo(Cities);
+export default React.memo(Spots);
