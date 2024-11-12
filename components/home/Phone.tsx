@@ -2,7 +2,7 @@ import React from "react";
 
 const Phone = () => {
   return (
-    <div className="md:w-[15.2vw] md:h-[28vw] w-[48.3vw] h-[89.1vw] overflow-hidden absolute left-1/2 -bottom-[36vw] -ml-[24.15vw] md:-bottom-[12vw] md:-ml-[7.6vw] z-[200]">
+    <div className="md:w-[15.2vw] md:h-[28vw] w-[48.3vw] h-[89.1vw] overflow-hidden absolute left-1/2 -bottom-[36vw] -ml-[24.15vw] md:-bottom-[12vw] md:-ml-[7.6vw] z-[500]">
       <img src="/bg-phone.svg" className="w-full h-full img-disabled" alt="" />
       <img
         src="/heyo-share-t.png"

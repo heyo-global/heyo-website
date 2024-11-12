@@ -47,7 +47,7 @@ const PageTwo = () => {
         <span className="text-[#645A00] font-[400] text-[3.2vw] md:text-[1.88vw]">
           Unlocked Cities
         </span>
-        <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 md:-mt-[3px] z-50"></div>
+        <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
       </div>
 
       <div className="md:w-[36.7vw] md:h-[18.3vw] md:ml-[5vw] w-[74.67vw] h-[35.7vw] mt-[5vw] md:mt-0 flex flex-col justify-center items-center bg-[#221F00] md:rounded-[1.56vw] rounded-[3.2vw] relative z-[5]">
@@ -76,7 +76,7 @@ const PageTwo = () => {
         <span className="text-[#CAB700] font-[400] text-[3.2vw] md:text-[1.88vw]">
           Created Spots
         </span>
-        <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 md:-mt-[3px] z-50"></div>
+        <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.6vw] z-50"></div>
       </div>
     </div>
   );

@@ -141,7 +141,24 @@ html {
 }
 
 .img-disabled{
-  touch-action: pan-y;/* 除了上下滑动，禁用其他手势 */
-  -webkit-touch-callout: none;// 禁止长按图片保存
-  pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+  touch-action: pan-y; 
+  -webkit-touch-callout: none; 
+  pointer-events: none;  
+}
+
+@keyframes marker-animation {
+  0% {
+      transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-10%);
+  }
+}
+.marker{
+  animation: marker-animation 1s infinite;
 }
