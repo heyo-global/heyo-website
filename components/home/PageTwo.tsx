@@ -66,7 +66,7 @@ const PageTwo = () => {
             }}
           />
         )}
-        <span className="text-[#645A00] font-[400] text-[3.2vw] md:text-[1.88vw]">
+        <span className="text-[#645A00] font-[400] text-[3.2vw] md:text-[1.6vw] md:mt-[0.8vw]">
           Unlocked Cities
         </span>
         <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
@@ -83,7 +83,7 @@ const PageTwo = () => {
             }}
           />
         )}
-        <span className="text-[#CAB700] font-[400] text-[3.2vw] md:text-[1.88vw]">
+        <span className="text-[#CAB700] font-[400] text-[3.2vw] md:text-[1.6vw] md:mt-[0.8vw]">
           Created Spots
         </span>
         <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.6vw] z-50"></div>
