@@ -7,7 +7,7 @@ const PageOne = () => {
   const {isMobile} = useWindowSize();
   return (
     <div className="w-screen h-screen relative overflow-hidden bg-black">
-      {isMobile && <Header  />} 
+      {/* {isMobile && <Header  />}  */}
       <div className=" relative w-full h-full overflow-hidden">
         <img
           src="/bg-earth.svg"
@@ -40,7 +40,7 @@ const PageOne = () => {
         />
       </div>
 
-      <Phone />
+      {/* <Phone /> */}
     </div>
   );
 };

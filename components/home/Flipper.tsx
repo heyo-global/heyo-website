@@ -23,7 +23,7 @@ const Flipper = ({ front, back }: { front: number; back: number }) => {
     }, 600);
   }, [back]);
   return (
-    <div className={` M-Flipper up ${isFlipping ? "go" : ""} `}>
+    <div className={` M-Flipper down ${isFlipping ? "go" : ""} `}>
       <div className={"digital front " + ("number" + frontTextFromData)}></div>
       <div className={"digital back " + ("number" + backTextFromData)}></div>
     </div>

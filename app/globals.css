@@ -138,7 +138,7 @@ html {
   }
 
   50% {
-    transform: translateY(0);
+    transform: translateY(-6vw);
   }
 
   100% {
@@ -148,7 +148,7 @@ html {
 .line {
   height: 100%;
   width: 100%;
-  background: linear-gradient(-180deg, rgba(0, 255, 51, 0) 43%, #FFEA00 211%);
+  background: linear-gradient(-180deg, #FFEA00 0%,  rgba(0, 0, 0, 0) 90%);
   border-bottom: 3px solid #FFEA00;
   transform: translateY(-100%);
   animation: radar-beam 3.6s infinite;

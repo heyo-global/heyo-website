@@ -31,7 +31,7 @@ const PageTwo = () => {
 
   return (
     <div className="w-full h-screen overflow-hidden relative flex justify-center items-center md:flex-row flex-col bg-theme-color">
-     {isMobile && <HeaderTwo />} 
+     {/* {isMobile && <HeaderTwo />}  */}
       <img
         src="/bg-light.svg"
         className=" w-full h-screen absolute bottom-0 left-0 z-[6] img-disabled"
@@ -50,7 +50,7 @@ const PageTwo = () => {
         alt=""
       />
 
-     {isMobile &&  <Phone />}
+     {/* {isMobile &&  <Phone />} */}
       
       <div
         ref={ref}

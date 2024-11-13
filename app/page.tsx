@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useScroll } from "ahooks";
 import HeaderTwo from "@/components/home/HeaderTwo";
 import Header from "@/components/home/Header";
+import Phone from "@/components/home/Phone";
 
 export default function Home() {
   const { isMobile, height } = useWindowSize();
@@ -25,14 +26,12 @@ export default function Home() {
     }
   }, [scroll, height]);
   return (
-    <div className="flex flex-col w-screen h-screen bg-theme-color">
-      {!isMobile && (
-        <div className="fixed left-0 right-0 top-0 z-[2000] h-[6.0vw]">
+    <div className="flex flex-col w-screen h-screen bg-theme-color relative">
+      <div className="fixed left-0 right-0 top-0 z-[2000] h-[6.0vw]">
           {show && <HeaderTwo />}
           {!show && <Header />}
         </div>
-      )}
-      {isMobile ? (
+      {/* {isMobile ? (
         <Swiper
           direction="vertical"
           style={{ "--height": "100vh" }}
@@ -45,12 +44,13 @@ export default function Home() {
             <PageTwo />
           </Swiper.Item>
         </Swiper>
-      ) : (
+      ) : ( */}
         <div className="w-full h-screen overflow-y-scroll" ref={ref}>
           <PageOne />
           <PageTwo />
         </div>
-      )}
+      {/* )} */}
+      <Phone />
     </div>
   );
 }
