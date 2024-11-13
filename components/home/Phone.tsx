@@ -9,7 +9,7 @@ const Phone = () => {
         className="rounded-[20px] md:w-[11.8vw] md:h-[12vw] w-[36vw] h-[36vw] absolute left-1/2 -ml-[18vw] top-[10vw] md:-ml-[5.9vw] md:top-[2.9vw] z-10"
         alt=""
       />
-      <div className="absolute left-[2vw] md:left-[0.69vw] w-[44vw] md:w-[13.8vw] md:h-[13.5vw] h-[48vw] top-[6vw] md:top-[2vw] z-[20]">
+      <div className="absolute left-[2vw] md:left-[0.69vw] w-[44vw] md:w-[13.8vw] md:h-[13.5vw] h-[47vw] top-[6vw] md:top-[2vw] z-[20]">
         <div className="line"></div>
       </div>
       <img
