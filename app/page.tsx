@@ -45,7 +45,7 @@ export default function Home() {
           </Swiper.Item>
         </Swiper>
       ) : ( */}
-        <div className="w-full h-screen overflow-y-scroll" ref={ref}>
+        <div className="w-full h-screen overflow-y-scroll  overflow-x-hidden" ref={ref}>
           <PageOne />
           <PageTwo />
         </div>

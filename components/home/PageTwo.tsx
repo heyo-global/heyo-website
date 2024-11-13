@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Phone from "./Phone";
 import HeaderTwo from "./HeaderTwo";
 import Citites from "./Citites";
@@ -59,7 +59,7 @@ const PageTwo = () => {
         
         {inViewport && data && (
           <Citites
-            start={ cityCount || data.city_num - 20 || 100}
+            start={ cityCount || data.city_num - 5 || 100}
             end={data.city_num || cityCount}
             onFinish={() => {
               setCityCount(data.city_num);
@@ -76,7 +76,7 @@ const PageTwo = () => {
       
         {inViewport && data && (
           <FilpClock
-            start={spotCount || data.point_num - 30 || 2500}
+            start={spotCount || data.point_num - 20 || 2500}
             end={data.point_num || spotCount}
             onFinish={() => {
               setSpotCount(data.point_num)

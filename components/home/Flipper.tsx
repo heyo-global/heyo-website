@@ -17,6 +17,7 @@ const Flipper = ({ front, back }: { front: number; back: number }) => {
 
   useEffect(() => {
     setBackTextFromData(back);
+    setFlipping(true);
     setTimeout(() => {
       setFrontTextFromData(back);
       setFlipping(false);

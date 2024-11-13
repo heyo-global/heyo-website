@@ -6,10 +6,10 @@ const Phone = () => {
       <img src="/bg-phone.svg" className="w-full h-full z-[1]" alt="" />
       <img
         src="/heyo-share-t.png"
-        className="md:w-[12vw] md:h-[12vw] w-[36vw] h-[36vw] absolute left-1/2 -ml-[18vw] top-[10vw] md:-ml-[6vw] md:top-[3vw] z-10"
+        className="rounded-[20px] md:w-[11.8vw] md:h-[12vw] w-[36vw] h-[36vw] absolute left-1/2 -ml-[18vw] top-[10vw] md:-ml-[5.9vw] md:top-[2.9vw] z-10"
         alt=""
       />
-      <div className="absolute left-[2vw] md:left-[0.7vw] w-[44vw] md:w-[13.8vw] md:h-[12vw] h-[50vw] top-[6vw] md:top-[3vw] z-[20]">
+      <div className="absolute left-[2vw] md:left-[0.69vw] w-[44vw] md:w-[13.8vw] md:h-[13.5vw] h-[48vw] top-[6vw] md:top-[2vw] z-[20]">
         <div className="line"></div>
       </div>
       <img

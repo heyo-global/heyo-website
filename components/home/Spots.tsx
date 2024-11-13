@@ -45,7 +45,7 @@ const Spots = ({
         onFinish();
         clearInterval(timer);
       }
-    }, 1500);
+    }, 1000);
     return () => clearInterval(timer);
   }, []);
 
