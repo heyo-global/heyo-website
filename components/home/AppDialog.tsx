@@ -34,16 +34,16 @@ const AppDialog = ({ show, setShow }: any) => {
             />
             <img
               src="/image-code.png"
-              className="w-[200px] h-[200px] md:w-[10.42vw] md:h-[10.42vw] absolute z-10 top-[110px]
-         left-1/2 -ml-[100px] md:top-[5.73vw] md:-ml-[5.21vw]"
+              className="w-[53vw] h-[53vw] md:w-[10.42vw] md:h-[10.42vw] absolute z-10 top-[29.6vw]
+         left-1/2 -ml-[26.5vw] md:top-[5.73vw] md:-ml-[5.21vw]"
             />
             <div
-              className="w-[200px] h-[38px] md:w-[10.42vw] md:h-[1.98vw] flex justify-center items-center text-[#2c2100]
-         gap-[6px] absolute z-10 top-[306px] left-1/2 -ml-[100px] cursor-pointer hover:text-black hover:scale-105
+              className="w-[53vw] h-[38px] md:w-[10.42vw] md:h-[1.98vw] flex justify-center items-center text-[#2c2100]
+         gap-[6px] absolute z-10 top-[81.6vw] left-1/2 -ml-[26.5vw] cursor-pointer hover:text-black hover:scale-105
            md:top-[15.94vw] md:-ml-[5.21vw]"
               onClick={handleClickToMobile}
             >
-              <span className="custom-app-underline   text-[14px] md:text-[0.73vw] font-[800]">
+              <span className="custom-app-underline text-[3.7vw] md:text-[0.72vw] font-[700]">
                 t.me/HeyoPlanetBot/Heyo
               </span>
               <img
@@ -53,15 +53,15 @@ const AppDialog = ({ show, setShow }: any) => {
             </div>
 
             <div
-              className="w-[238px] h-[38px] md:w-[12.4vw] md:h-[1.98vw] flex justify-center items-center bg-[#2C2100] rounded-[10px]
-         gap-[12px] absolute z-10 bottom-[46px] left-1/2 -ml-[119px]  md:-ml-[6.2vw] cursor-pointer hover:bg-black hover:scale-105"
+              className="w-[63.5vw] h-[38px] md:w-[12.4vw] md:h-[1.98vw] flex justify-center items-center bg-[#2C2100] rounded-[10px]
+         gap-[12px] absolute z-10 bottom-[12.27vw] md:bottom-[10vw] left-1/2 -ml-[32.7vw]  md:-ml-[6.2vw] cursor-pointer hover:bg-black hover:scale-105"
               onClick={handleClickToPc}
             >
               <img
                 src="/icon-pc.svg"
                 className="w-[19px] h-[16px] img-disabled"
               />
-              <span className="custom-underline text-[#FFF9B0] text-[14px] md:text-[0.73vw] font-[500]">
+              <span className="custom-underline text-[#FFF9B0] text-[3.7vw] md:text-[0.73vw] font-[500]">
                 app.heyoplanet.com
               </span>
               <svg
@@ -122,37 +122,38 @@ const AppDialog = ({ show, setShow }: any) => {
               />
               <img
                 src="/image-code.png"
-                className="w-[200px] h-[200px] md:w-[10.42vw] md:h-[10.42vw] absolute z-10 top-[110px]
-         left-1/2 -ml-[100px] md:top-[5.73vw] md:-ml-[5.21vw]"
+                className="w-[53vw] h-[53vw] md:w-[10.42vw] md:h-[10.42vw] absolute z-10 top-[110px]
+         left-1/2 -ml-[26.5vw] md:top-[5.73vw] md:-ml-[5.21vw]"
               />
               <div
-                className="w-[200px] h-[38px] md:w-[10.42vw] md:h-[1.98vw] flex justify-center items-center text-[#2c2100]
-         gap-[6px] absolute z-10 top-[306px] left-1/2 -ml-[100px] cursor-pointer hover:text-black hover:scale-105
+                className="w-[53vw] h-[38px] md:w-[10.42vw] md:h-[1.98vw] flex justify-center items-center text-[#2c2100]
+         gap-[6px] absolute z-10 top-[81.6vw] left-1/2 -ml-[26.5vw] cursor-pointer hover:text-black hover:scale-105
            md:top-[15.94vw] md:-ml-[5.21vw]"
                 onClick={handleClickToMobile}
               >
-                <span className="custom-app-underline   text-[14px] md:text-[0.73vw] font-[800]">
+                <span className="custom-app-underline   text-[3.7vw] md:text-[0.73vw] font-[800]">
                   t.me/HeyoPlanetBot/Heyo
                 </span>
                 <img
                   src="/icon-right-black.svg"
-                  className="w-[9px] h-[10px] img-disabled"
+                  className="w-[9px] h-[10px] md:w-[9px] md:h-[10px] img-disabled"
                 />
               </div>
 
               <div
-                className="w-[238px] h-[38px] md:w-[12.4vw] md:h-[1.98vw] flex justify-center items-center bg-[#2C2100] rounded-[10px]
-         gap-[12px] absolute z-10 bottom-[46px] left-1/2 -ml-[119px]  md:-ml-[6.2vw] cursor-pointer hover:bg-black hover:scale-105"
+                className="w-[63.5vw] h-[38px] md:w-[12.4vw] md:h-[1.98vw] flex justify-center items-center bg-[#2C2100] rounded-[10px]
+         gap-[12px] md:gap-[0.6vw] absolute z-10 bottom-[46px] md:bottom-[2.4vw] left-1/2 -ml-[119px]  md:-ml-[6.2vw] cursor-pointer hover:bg-black hover:scale-105"
                 onClick={handleClickToPc}
               >
                 <img
                   src="/icon-pc.svg"
-                  className="w-[19px] h-[16px] img-disabled"
+                  className="w-[17px] h-[14px] md:w-[1vw] md:h-[0.83vw] img-disabled"
                 />
-                <span className="custom-underline text-[#FFF9B0] text-[14px] md:text-[0.73vw] font-[500]">
+                <span className="custom-underline text-[#FFF9B0] text-[3.7vw] md:text-[0.73vw] font-[500]">
                   app.heyoplanet.com
                 </span>
                 <svg
+                className="w-[18px] h-[18px] md:[1vw] md:h-[1vw]"
                   width="21"
                   height="20"
                   viewBox="0 0 21 20"
