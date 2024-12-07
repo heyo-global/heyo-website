@@ -12,13 +12,13 @@
 .cities .M-Flipper {
   display: inline-block;
   position: relative;
-  width: 6.88vw;
-  height: 11.4vw;
-  line-height: 11.4vw;
+  width: 5.6vw;
+  height: 8.54vw;
+  line-height: 8.54vw;
   /* border: solid 1px #FFFFFF0D; */
   border-radius: 6px;
   background: #ffea00;
-  font-size: 8.3vw;
+  font-size: 6.25vw;
   color: #2c2100;
   /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
   text-align: center;

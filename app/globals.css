@@ -4,9 +4,7 @@
 
 @font-face {
   font-family: "Nunito"; 
-  src: url("/Nunito-VariableFont_wght.ttf") format("woff"),
-    url("/Nunito-VariableFont_wght.ttf") format("opentype"),
-    url("/Nunito-VariableFont_wght.ttf") format("truetype");
+  src: url("/Nunito-VariableFont_wght.ttf");
 }
 
 
@@ -193,4 +191,18 @@ html {
 .marker6{
   animation: marker-animation 5s infinite;
 }
- 
+
+.custom-underline {
+  text-decoration-line: underline;
+  /* text-decoration-style: wavy; */
+  text-decoration-color: #FFF9B0;
+  text-decoration-thickness: 1px;
+}
+
+.custom-app-underline{
+  
+  text-decoration-line: underline;
+  /* text-decoration-style: wavy; */
+  text-decoration-color: #2C2100;
+  text-decoration-thickness: 1px;
+}

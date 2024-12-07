@@ -2,12 +2,13 @@ import React from "react";
 import Phone from "./Phone";
 import Header from "./Header";
 import useWindowSize from "@/hooks/useWindowSize";
+import Explore from "./Explore";
 
-const PageOne = () => {
+const PageOne = ({setShow}:any) => {
   const {isMobile} = useWindowSize();
   return (
     <div className="w-screen h-screen relative overflow-hidden bg-black">
-      {/* {isMobile && <Header  />}  */}
+     
       <div className=" relative w-full h-full overflow-hidden">
         <img
           src="/bg-earth.svg"
@@ -22,14 +23,15 @@ const PageOne = () => {
         <img src="/Hotspots-01.svg" alt="" className="img-disabled absolute top-[112vw] left-[38vw] z-[300] w-[10vw] h-[16vw] marker6 md:top-[32vw] md:left-[56vw] md:w-[5.1vw] md:h-[8.2vw]"/>
       </div>
 
-      <div className="font-[800] text-[10.67vw] leading-[12.8vw] left-[16px] md:text-[6.6vw] text-[#FFEA00] md:leading-[8vw] md:left-[4.4vw] absolute -top-[44vw] md:top-0 h-screen z-10 flex flex-col justify-center">
+      <div className="font-[800] text-[10.67vw] leading-[12.8vw] left-[16px] md:text-[5.2vw] text-[#FFEA00] md:leading-[6.6vw] md:left-[4.4vw] absolute -top-[44vw] md:top-[0vw] h-screen z-10 flex flex-col justify-center">
         <div>Social Network</div>
         <div className="flex items-center gap-[3vw]">
           <span>Based On</span>
           <img src="/icon-map.png" className="img-disabled w-[10.9vw] h-[6.4vw]" alt="" />
         </div>
         <div>Real-World</div>
-        <div>Location</div>
+        <div className="mb-[2vw]">Location</div>
+        <Explore setShow={setShow}/>
       </div>
 
       <div className="w-screen h-[56.67vw] md:h-[5.2vw] overflow-hidden absolute -bottom-[40vw] md:bottom-0 left-0">
@@ -40,7 +42,6 @@ const PageOne = () => {
         />
       </div>
 
-      {/* <Phone /> */}
     </div>
   );
 };

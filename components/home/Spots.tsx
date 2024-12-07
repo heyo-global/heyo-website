@@ -26,7 +26,7 @@ const Spots = ({
   const [backs, setBacks] = useState<number[]>([]);
   useEffect(() => {
     
-    let startValue = start > 1000 ? start : 1000;
+    let startValue = start > 5 ? start - 5 : start;
     let endValue = startValue ;
     let frontArr: number[] = formatData(startValue);
     let backArr: number[] = formatData(endValue);
@@ -50,7 +50,15 @@ const Spots = ({
   }, []);
 
   return (
-    <div className="FlipTimeClock md:gap-[20px] gap-[10px]">
+    <div className="FlipTimeClock md:gap-[10px] gap-[10px]">
+      {
+        end < 1000 &&
+        <Flipper front={0} back={0} />
+      }
+      {
+        end < 100 &&
+        <Flipper front={0} back={0} />
+      } 
       {fronts.map((item: number, index: number) => (
         <Flipper front={item} back={backs[index]} />
       ))}

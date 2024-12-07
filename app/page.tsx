@@ -7,13 +7,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { useScroll } from "ahooks";
 import HeaderTwo from "@/components/home/HeaderTwo";
 import Header from "@/components/home/Header";
-import Phone from "@/components/home/Phone";
+// import Phone from "@/components/home/Phone";
+import AppDialog from "@/components/home/AppDialog";
 
 export default function Home() {
   const { isMobile, height } = useWindowSize();
   const ref = useRef(null);
   const scroll = useScroll(ref);
   const [show, setShow] = useState(false);
+  const [showApp,setShowApp] = useState(false);
 
   useEffect(() => {
     if (scroll) {
@@ -46,11 +48,12 @@ export default function Home() {
         </Swiper>
       ) : ( */}
         <div className="w-full h-screen overflow-y-scroll  overflow-x-hidden" ref={ref}>
-          <PageOne />
-          <PageTwo />
+          <PageOne setShow={setShowApp}/>
+          <PageTwo setShow={setShowApp}/>
         </div>
       {/* )} */}
-      <Phone />
+
+      <AppDialog show={showApp} setShow={setShowApp}/>
     </div>
   );
 }
