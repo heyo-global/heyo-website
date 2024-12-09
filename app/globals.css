@@ -81,39 +81,7 @@ a {
 html {
   color-scheme: dark;
 }
-
-/* @font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  src: url("/Montserrat-VariableFont_wght.ttf") format("woff"),
-    url("/Montserrat-VariableFont_wght.ttf") format("opentype"),
-    url("/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 900;
-  src: url("/Montserrat-Bold.ttf") format("woff"),
-    url("/Montserrat-Bold.ttf") format("opentype"),
-    url("/Montserrat-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  src: url("/Montserrat-SemiBold.ttf") format("woff"),
-    url("/Montserrat-SemiBold.ttf") format("opentype"),
-    url("/Montserrat-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  src: url("/Montserrat-Medium.ttf") format("woff"),
-    url("/Montserrat-Medium.ttf") format("opentype"),
-    url("/Montserrat-Medium.ttf") format("truetype");
-} */
-
+  
 .bg-theme-color{
   background-color: #FFEA00 !important;
 }
@@ -205,4 +173,8 @@ html {
   /* text-decoration-style: wavy; */
   text-decoration-color: #2C2100;
   text-decoration-thickness: 1px;
+}
+
+.adm-dialog-body,.adm-dialog-content{
+  max-height: 100vh !important;
 }
