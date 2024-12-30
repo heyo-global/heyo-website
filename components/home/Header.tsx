@@ -10,12 +10,11 @@ const Header = () => {
           src={"/title.svg"}
           className="w-[56px] h-[55px] md:w-[10.1vw] md:h-[3.1vw] img-disabled"
           alt="Logo"
-        />
-        {/* <span className="md:text-[1.67vw] font-[500] text-theme-color">
-          heyo
-        </span> */}
+        /> 
       </div>
-      <div className="flex-grow"></div>
+      <div className="flex-grow">
+        <span></span>
+      </div>
       <div className="flex flex-row-reverse items-center gap-4 md:gap-6">
         <Link
           href="https://x.com/HeyoPlanet"

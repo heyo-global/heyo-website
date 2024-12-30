@@ -7,6 +7,9 @@ import { useScroll } from "ahooks";
 import HeaderTwo from "@/components/home/HeaderTwo";
 import Header from "@/components/home/Header";
 import AppDialog from "@/components/home/AppDialog";
+import RealWorld from "@/components/home/RealWorld";
+import Landmark from "@/components/home/Landmark";
+
 
 export default function Home() {
   const { height } = useWindowSize();
@@ -26,16 +29,17 @@ export default function Home() {
     }
   }, [scroll, height]);
   return (
-    <div className="flex flex-col w-screen h-screen bg-theme-color relative">
+    <div className="flex flex-col w-screen h-screen bg-white relative">
       <div className="fixed left-0 right-0 top-0 z-[2000] h-[6.0vw]">
-        {show && <HeaderTwo />}
-        {!show && <Header />}
+        <Header />
       </div>
 
       <div
         className="w-full h-screen overflow-y-scroll  overflow-x-hidden"
         ref={ref}
       >
+        <Landmark />
+        <RealWorld />
         <PageOne setShow={setShowApp} />
         <PageTwo setShow={setShowApp} />
       </div>

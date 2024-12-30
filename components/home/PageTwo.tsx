@@ -48,38 +48,13 @@ const PageTwo = ({ setShow }: any) => {
     md:justify-between md:px-[4vw] items-center md:flex-row flex-col bg-theme-color"
     >
       <img
-        src="/bg-light.svg"
-        className=" w-full h-screen absolute bottom-0 left-0 z-[6] img-disabled"
-        alt=""
-      />
-
-      <img
         src="/image-footer.png"
         className="w-full h-[19.3vw] hidden md:block  absolute bottom-0 left-0 z-[10] img-disabled"
         alt=""
       />
 
-      <img
-        src="/image-footer-phone.png"
-        className="w-full h-[32.27vw] md:hidden block absolute bottom-0 left-0 z-[10] img-disabled"
-        alt=""
-      />
-
-      <div
-        className="flex flex-col justify-center z-10 shrink-0 font-[800] text-[9.67vw] leading-[12.8vw] 
-        md:text-[3.12vw] 
-       md:leading-[3.65vw] text-[#2C2100] md:-mt-[8vw]"
-      >
-        <div>A Monopoly-inspired</div>
-        <div>game built on real-</div>
-        <div>world geography</div>
-        <div>where all land is</div>
-        <div className="mb-[2.4vw]">financialized</div>
-        <ExploreBlack setShow={setShow} />
-      </div>
-
       <div className="flex flex-col h-[220vw] md:h-[30.2vw] justify-center items-center mt-[8vw] md:-mt-[8vw]">
-         <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col ">
+        <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col ">
           <div
             ref={ref}
             className="md:w-[26vw] md:h-[13.54vw] px-[20px]  w-[80vw]  md:pt-[0.5vw] 
@@ -128,7 +103,7 @@ const PageTwo = ({ setShow }: any) => {
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.6vw] z-50"></div>
           </div>
-        </div>  
+        </div>
 
         <div className="w-full  md:flex-1  relative flex md:justify-center items-center md:flex-row flex-col-reverse ">
           <div
@@ -175,7 +150,6 @@ const PageTwo = ({ setShow }: any) => {
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
           </div>
-          
         </div>
       </div>
     </div>

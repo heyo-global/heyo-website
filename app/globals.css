@@ -15,7 +15,7 @@ input::-webkit-inner-spin-button {
 }
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: #535145;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
 
@@ -62,7 +62,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: black !important;
+  background: white !important;
 }
  
 div,span,p,ul,li{
@@ -87,7 +87,7 @@ html {
 }
 
 .text-theme-color{
-  color: #FFEA00 !important;
+  color: #535145 !important;
 }
 
 .bg{ 
@@ -95,7 +95,7 @@ html {
   background-repeat: no-repeat;
   background-clip: border-box;
   background-origin: border-box;
-  background-color: black;
+  background-color: white;
 }
  
 @keyframes radar-beam {
