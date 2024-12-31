@@ -2,88 +2,88 @@ import React from "react";
 
 const RealWord = () => {
   return (
-    <section className=" flex justify-center items-center flex-col text-[#535145]">
-      <div className="font-[800] text-[46px]">Providing A Global Lifestyle</div>
+    <section id="REAL-WORLD" className=" flex justify-center items-center flex-col text-[#535145]">
+      <div className="font-[800] text-[46px]  md:text-[2.4vw] ">Providing A Global Lifestyle</div>
 
-      <div className="flex justify-center items-center mt-[100px]">
+      <div className="flex justify-center items-center mt-[100px] md:mt-[4.2vw]">
         <div
-          className="rounded-[20px] w-[390px] h-[512px] flex flex-col items-center pt-[40px]"
+          className="rounded-[20px] w-[390px] h-[512px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #CEFFFC 0%, #ECFFFE 100%)",
           }}
         >
-          <span className="text-[30px] leading-[42px] font-[800]">
+          <span className="text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">
             Interaction with
           </span>
-          <span className="text-[30px] leading-[42px] font-[800]">Rewards</span>
+          <span className="text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">Rewards</span>
           <img
             src="/image-interaction.png"
             alt=""
-            className="w-[247px] h-[241px] my-[10px]"
+            className="w-[247px] h-[241px] my-[10px] md:w-[12.86vw] md:h-[12.55vw]"
           />
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             Heyo goes beyond providing
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             detailed landmark information
           </span>
         </div>
 
         <div
-          className="rounded-[20px] w-[339px] h-[587px] flex flex-col items-center pt-[40px]"
+          className="rounded-[20px] w-[339px] h-[587px] md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFF1DB 0%, #FFFBF4 100%)",
           }}
         >
-          <span className="text-[30px] leading-[42px] font-[800]">
+          <span className="text-[30px] leading-[42px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">
             A Compelling
           </span>
-          <span className="text-[30px] leading-[42px] font-[800]">
+          <span className="text-[30px] leading-[42px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">
             Economic Model
           </span>
           <img
             src="/image-compelling.png"
             alt=""
-            className="w-[255px] h-[211px] my-[24px]"
+            className="w-[255px] h-[211px] my-[24px] md:w-[13.28vw] md:h-[11vw]"
           />
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             Heyo introduces an innovative
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             3-token model to reward
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             various contributions, ensuring
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             a balanced economy
           </span>
         </div>
 
         <div
-          className="rounded-[20px] w-[390px] h-[512px] flex flex-col items-center pt-[40px]"
+          className="rounded-[20px] w-[390px] h-[512px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFE1E1 0%, #FFF5F5 100%)",
           }}
         >
-          <span className="text-[30px] leading-[42px] font-[800]">
+          <span className="text-[30px] leading-[42px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">
             Bridging Reality and
           </span>
-          <span className="text-[30px] leading-[42px] font-[800]">
+          <span className="text-[30px] leading-[42px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">
             Cryptocurrency
           </span>
           <img
             src="/image-bridging.png"
             alt=""
-            className="w-[208px] h-[219px] my-[16px]"
+            className="w-[208px] h-[219px] my-[16px] md:w-[10.8vw] md:h-[11.4vw]"
           />
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             Every landmark on Heyo
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             holds significant real-world
           </span>
-          <span className="text-[14px] leading-[18px] font-[600]">
+          <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             business value
           </span>
         </div>

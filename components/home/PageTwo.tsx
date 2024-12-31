@@ -40,15 +40,15 @@ const PageTwo = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden relative flex justify-center items-center flex-col ">
+    <section id="DATA" className="overflow-hidden relative flex justify-center items-center flex-col ">
       <img
         src="/image-footer.png"
-        className="w-[2186px] h-[230px] absolute bottom-0 -left-[20px] z-[10] img-disabled"
+        className="w-[2186px] h-[230px] md:w-[113.85vw] md:h-[12vw] absolute bottom-0 -left-[20px] z-[10] img-disabled"
         alt=""
       />
 
       <div className="flex flex-col justify-center items-center ">
-        <span className="font-[800] text-[46px] leading-[64px] text-[#535145]">Real-time Portfolio</span>
+        <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">Real-time Portfolio</span>
 
         <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col ">
           <div

@@ -1,44 +1,84 @@
- 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import AppDialog from "./AppDialog";
+
+const menus = [
+  {
+    label: "INTRO",
+    url: "#INTRO",
+    target: false,
+  },
+  {
+    label: "DATA",
+    url: "#DATA",
+    target: false,
+  },
+  {
+    label: "REAL-WORLD",
+    url: "#REAL-WORLD",
+    target: false,
+  },
+  {
+    label: "MONOPOLY GAME",
+    url: "#MONOPOLY",
+    target: false,
+  },
+  {
+    label: "PARTNER",
+    url: "#PARTNER",
+    target: false,
+  },
+  {
+    label: "Docs",
+    url: "",
+    target: true,
+  },
+];
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   return (
-    <div className="md:h-[6.0vw] h-[11.5vw] absolute top-0 left-0 right-0 z-[100] text-xs flex items-center justify-between bg-transparent px-[4.3vw] md:px-[1.88vw]">
+    <div className="md:h-[6.0vw] h-[11.5vw] !text-[#535145] absolute top-0 left-0 right-0 z-[100] text-xs flex items-center justify-between bg-transparent px-[4.3vw] md:px-[5vw]">
       <div className="flex items-center gap-2 shrink-0 ">
         <img
           src={"/title.svg"}
-          className="w-[56px] h-[55px] md:w-[10.1vw] md:h-[3.1vw] img-disabled"
+          className="w-[56px] h-[55px] md:w-[10vw] md:h-[3.13vw] img-disabled"
           alt="Logo"
-        /> 
+        />
       </div>
-      <div className="flex-grow">
-        <span></span>
+      <div className="flex-grow flex justify-center items-center gap-[30px] md:gap-[1.56vw]">
+        {menus.map((item: any) => (
+          <a
+            key={item.url}
+            href={item.url}
+            className="font-[600] px-[12px] leading-[11.5vw] md:leading-[6vw] md:h-[6.0vw] h-[11.5vw] text-[22px] md:text-[1.15vw] !text-[#535145] hover:scale-105 cursor-pointer"
+          >
+            {item.label}
+          </a>
+        ))}
       </div>
-      <div className="flex flex-row-reverse items-center gap-4 md:gap-6">
-        <Link
-          href="https://x.com/HeyoPlanet"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="/icon-x.svg"
-            alt="X"
-            className="w-[3.2vw] h-[3.2vw] md:w-[1.6vw] md:h-[1.6vw] img-disabled"
-          />
-        </Link>
-        <Link
-          href="https://t.me/HeyoPlanetBot"
-          target="_blank"
-          rel="noreferrer"
+      <div className="flex items-center gap-[30px] md:gap-[1.56vw]">
+        <div
+          className="flex justify-center items-center gap-[8px] !text-[#535145] cursor-pointer hover:scale-105 font-[800]"
+          onClick={() => setShow(true)}
         >
           <img
             src="/icon-t.svg"
-            alt="T"
-            className="w-[3.4vw] h-[3.4vw] md:w-[2vw] md:h-[2vw] img-disabled"
+            alt="X"
+            className="w-[24px] h-[20px] img-disabled"
           />
+          Telegram Mini App
+        </div>
+        <Link
+          href="https://app.heyoplanet.com"
+          target="_blank"
+          rel="noreferrer"
+          className="!text-[#535145] font-[800] hover:scale-110"
+        >
+          App
         </Link>
       </div>
+      <AppDialog show={show} setShow={setShow} />
     </div>
   );
 };
