@@ -101,7 +101,7 @@ const Planet = () => {
           <span>@heyoplanetofficial</span>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => window.open("https://github.com/heyo-global/heyo-website","_blank")}
@@ -109,7 +109,7 @@ const Planet = () => {
         >
           <img src="/icon-github.svg" alt="" className="w-[22px] h-[22px]" />
           <span>@heyo-website</span>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
