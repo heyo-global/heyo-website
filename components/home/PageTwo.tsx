@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import Phone from "./Phone";
-import HeaderTwo from "./HeaderTwo";
 import Citites from "./Citites";
 import FilpClock from "./Spots";
 import { useInViewport, useLocalStorageState } from "ahooks";
 import { useStatistics } from "@/hooks/useApi";
 import useWindowSize from "@/hooks/useWindowSize";
-import ExploreBlack from "./ExploreBlack";
 
-const PageTwo = ({ setShow }: any) => {
+const PageTwo = () => {
   const { isMobile } = useWindowSize();
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
@@ -43,17 +40,16 @@ const PageTwo = ({ setShow }: any) => {
   }, []);
 
   return (
-    <div
-      className="w-full h-[290vw] md:h-screen overflow-hidden relative flex justify-start 
-    md:justify-between md:px-[4vw] items-center md:flex-row flex-col bg-theme-color"
-    >
+    <div className="w-screen h-screen overflow-hidden relative flex justify-center items-center flex-col ">
       <img
         src="/image-footer.png"
-        className="w-full h-[19.3vw] hidden md:block  absolute bottom-0 left-0 z-[10] img-disabled"
+        className="w-[2186px] h-[230px] absolute bottom-0 -left-[20px] z-[10] img-disabled"
         alt=""
       />
 
-      <div className="flex flex-col h-[220vw] md:h-[30.2vw] justify-center items-center mt-[8vw] md:-mt-[8vw]">
+      <div className="flex flex-col justify-center items-center ">
+        <span className="font-[800] text-[46px] leading-[64px] text-[#535145]">Real-time Portfolio</span>
+
         <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col ">
           <div
             ref={ref}

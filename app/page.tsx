@@ -9,6 +9,7 @@ import Header from "@/components/home/Header";
 import AppDialog from "@/components/home/AppDialog";
 import RealWorld from "@/components/home/RealWorld";
 import Landmark from "@/components/home/Landmark";
+import Planet from "@/components/home/Planet";
 
 
 export default function Home() {
@@ -38,10 +39,11 @@ export default function Home() {
         className="w-full h-screen overflow-y-scroll  overflow-x-hidden"
         ref={ref}
       >
-        <PageOne setShow={setShowApp} />
-        <Landmark />
+        <PageOne />
+        <PageTwo />
         <RealWorld />
-        <PageTwo setShow={setShowApp} />
+        <Landmark />
+        <Planet />
       </div>
 
       <AppDialog show={showApp} setShow={setShowApp} />

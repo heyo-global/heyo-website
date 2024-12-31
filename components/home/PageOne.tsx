@@ -1,11 +1,9 @@
-import React from "react";
-import Phone from "./Phone";
-import Header from "./Header";
-import useWindowSize from "@/hooks/useWindowSize";
-import Explore from "./Explore";
+import React from "react"; 
+import useWindowSize from "@/hooks/useWindowSize"; 
 
-const PageOne = ({setShow}:any) => {
+const PageOne = () => {
   const {isMobile} = useWindowSize();
+
   return (
     <div className="w-screen h-screen relative overflow-hidden text-[#535145]">
       
