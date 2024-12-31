@@ -51,7 +51,7 @@ const PageTwo = () => {
       />
 
       <div className="flex flex-col justify-center items-center md:-mt-[2vw]">
-        <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
+        <span className="font-[800] text-[30px] leading-[40px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           Real-time Portfolio
         </span>
 

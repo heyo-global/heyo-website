@@ -47,7 +47,7 @@ const Header = () => {
           alt="Logo"
         />
       </div>
-      <div className="flex-grow flex justify-center items-center gap-[30px] md:gap-[1.56vw]">
+      <div className="flex-grow hidden md:flex justify-center items-center gap-[30px] md:gap-[1.56vw]">
         {menus.map((item: any) => (
           <motion.a
             whileHover={{ scale: 1.1 }}
@@ -60,7 +60,7 @@ const Header = () => {
           </motion.a>
         ))}
       </div>
-      <div className="flex items-center gap-[30px] md:gap-[1.56vw]">
+      <div className="flex items-center gap-[30px] md:gap-[1.56vw] shrink-0">
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

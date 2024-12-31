@@ -10,7 +10,7 @@ const Landmark = () => {
       id="MONOPOLY"
       className=" flex justify-center items-center flex-col text-[#535145]"
     >
-      <div className="font-[800] text-[46px] md:text-[2.4vw] ">
+      <div className="font-[800] text-[30px] md:text-[2.4vw] ">
         Landmark Manager
       </div>
 

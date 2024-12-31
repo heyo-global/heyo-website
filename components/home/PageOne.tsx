@@ -1,17 +1,20 @@
-import React from "react"; 
+import React, { useRef } from "react"; 
 import useWindowSize from "@/hooks/useWindowSize"; 
+import { motion } from 'framer-motion';
+import { useInViewport } from "ahooks";
 
 const PageOne = () => {
   const {isMobile} = useWindowSize();
-
+  const ref = useRef(null);
+  const [inViewport] = useInViewport(ref);
   return (
     <section id="INTRO" className="relative overflow-hidden text-[#535145]">
       
-      <div className="font-[800] text-[120px] md:text-[6.25vw] h-[50vh] leading-[130px] md:leading-[6.77vw] flex flex-col items-center justify-center pt-[10vw]">
+      <motion.div ref={ref} initial={{opacity: 0}} animate={{opacity: inViewport?1:0}} className="font-[800] text-[30px] md:text-[6.25vw] h-[50vh] leading-[40px] md:leading-[6.77vw] flex flex-col items-center justify-center pt-[10vw]">
         <span>The World's First</span>
         <span>Web3 LBS Lifestyle App</span>
-        <span className="font-[500] text-[35px] md:text-[1.82vw] leading-[40px] md:leading-[2vw] mt-[1vw]">Seamlessly move from Web2 to Web3 in daily lives</span> 
-      </div>
+        <span className="font-[500] text-[12px] md:text-[1.82vw] leading-[14px] md:leading-[2vw] mt-[1vw]">Seamlessly move from Web2 to Web3 in daily lives</span> 
+      </motion.div>
 
       <div className=" relative w-full  h-[50vh] overflow-hidden">
         <img

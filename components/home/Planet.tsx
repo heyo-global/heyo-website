@@ -59,7 +59,7 @@ const Planet = () => {
       />
 
       <div className="flex flex-col justify-center items-center ">
-        <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
+        <span className="font-[800] text-[30px] leading-[40px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           The Latest on Heyo Planet
         </span>
         <motion.div className="w-full h-[50vh] overflow-x-hidden overflow-y-auto mt-[2vw]" ref={ref} 

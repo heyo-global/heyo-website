@@ -37,8 +37,8 @@ export default function Home() {
       </div>
 
       <div id="outer" className="body" ref={ref}>
-        <PageOne />
         <PageTwo />
+        <PageOne />
         <RealWorld />
         <Landmark />
         <Planet />
