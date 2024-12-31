@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { useInViewport } from "ahooks";
 
 const Landmark = () => {
+  const ref = useRef(null);
+  const [inViewport] = useInViewport(ref);
   return (
-    <section id="MONOPOLY" className=" flex justify-center items-center flex-col text-[#535145]">
-      <div className="font-[800] text-[46px] md:text-[2.4vw] ">Landmark Manager</div>
+    <section
+      id="MONOPOLY"
+      className=" flex justify-center items-center flex-col text-[#535145]"
+    >
+      <div className="font-[800] text-[46px] md:text-[2.4vw] ">
+        Landmark Manager
+      </div>
 
-      <div className="flex justify-center items-center gap-[42px] mt-[80px]  md:mt-[3.2vw] md:gap-[2vw]">
-        <div className="rounded-[16px] w-[833px] h-[282px] md:w-[43.4vw] md:h-[14.7vw] flex justify-between items-center pl-[16px] bg-[#CCFCDE] relative">
+      <div className="flex justify-center items-center gap-[42px] mt-[80px]  md:mt-[3.2vw] md:gap-[2vw]" ref={ref}>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
+          className="rounded-[16px] w-[833px] h-[282px] md:w-[43.4vw] md:h-[14.7vw] flex justify-between items-center pl-[16px] bg-[#CCFCDE] relative"
+        >
           <div className="flex flex-grow h-full flex-col justify-center items-center">
             <span className="text-[30px] leading-[38px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">
               Location - based
@@ -24,9 +39,15 @@ const Landmark = () => {
             alt=""
             className="w-[451px] h-[282px] rounded-[16px] shrink-0 md:w-[23.5vw] md:h-[14.7vw]"
           />
-        </div>
+        </motion.div>
 
-        <div className="rounded-[16px] w-[574px] h-[282px] md:w-[30vw] md:h-[14.7vw] bg-[#FCFAE9] flex flex-col justify-between items-center">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
+          className="rounded-[16px] w-[574px] h-[282px] md:w-[30vw] md:h-[14.7vw] bg-[#FCFAE9] flex flex-col justify-between items-center"
+        >
           <img
             src="/image-create-occupy.png"
             alt=""
@@ -43,12 +64,22 @@ const Landmark = () => {
               Occupy from other people
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex justify-center items-center gap-[42px] mt-[42px] overflow-hidden md:gap-[2vw] md:mt-[2vw]">
-        <div className="rounded-[16px] w-[574px] h-[282px] md:w-[30vw] md:h-[14.7vw] bg-[#FCFAE9] flex flex-col justify-between items-center">
-          <img src="/image-manage.png" alt="" className="w-[342px] h-[207px] md:w-[17.8vw] md:h-[10.8vw]" />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
+          className="rounded-[16px] w-[574px] h-[282px] md:w-[30vw] md:h-[14.7vw] bg-[#FCFAE9] flex flex-col justify-between items-center"
+        >
+          <img
+            src="/image-manage.png"
+            alt=""
+            className="w-[342px] h-[207px] md:w-[17.8vw] md:h-[10.8vw]"
+          />
           <div className="flex-grow flex flex-col justify-center items-center -mt-[12px]">
             <span className="font-[800] text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw]">
               Manage Landmark
@@ -57,9 +88,15 @@ const Landmark = () => {
               Upgrading · Claim · Democrats
             </span>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="rounded-[16px] w-[833px] h-[282px] md:w-[43.4vw] md:h-[14.7vw] flex justify-between items-center pl-[16px] bg-[#CCFCDE] relative overflow-hidden">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
+          className="rounded-[16px] w-[833px] h-[282px] md:w-[43.4vw] md:h-[14.7vw] flex justify-between items-center pl-[16px] bg-[#CCFCDE] relative overflow-hidden"
+        >
           <div className="flex h-full flex-grow flex-col justify-center items-center">
             <span className="text-[30px] leading-[38px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">
               $LAND Usage - Network
@@ -83,7 +120,7 @@ const Landmark = () => {
             alt=""
             className="w-[357px] h-full shrink-0 rounded-[16px] md:w-[18.6vw]"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

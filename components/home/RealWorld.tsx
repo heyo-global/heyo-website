@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { useInViewport } from "ahooks";
 
 const RealWord = () => {
+  const ref = useRef(null);
+  const [inViewport] = useInViewport(ref);
   return (
-    <section id="REAL-WORLD" className=" flex justify-center items-center flex-col text-[#535145]">
-      <div className="font-[800] text-[46px]  md:text-[2.4vw] ">Providing A Global Lifestyle</div>
+    <section
+      id="REAL-WORLD"
+      className=" flex justify-center items-center flex-col text-[#535145]"
+    >
+      <div className="font-[800] text-[46px]  md:text-[2.4vw] ">
+        Providing A Global Lifestyle
+      </div>
 
-      <div className="flex justify-center items-center mt-[100px] md:mt-[4.2vw]">
-        <div
+      <div
+        className="flex justify-center items-center mt-[100px] md:mt-[4.2vw]"
+        ref={ref}
+      >
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
           className="rounded-[20px] w-[390px] h-[512px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #CEFFFC 0%, #ECFFFE 100%)",
@@ -15,7 +31,9 @@ const RealWord = () => {
           <span className="text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">
             Interaction with
           </span>
-          <span className="text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">Rewards</span>
+          <span className="text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw] font-[800]">
+            Rewards
+          </span>
           <img
             src="/image-interaction.png"
             alt=""
@@ -27,9 +45,11 @@ const RealWord = () => {
           <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             detailed landmark information
           </span>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }} 
           className="rounded-[20px] w-[339px] h-[587px] md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFF1DB 0%, #FFFBF4 100%)",
@@ -58,9 +78,13 @@ const RealWord = () => {
           <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             a balanced economy
           </span>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: inViewport ? 1 : 0 }}
           className="rounded-[20px] w-[390px] h-[512px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFE1E1 0%, #FFF5F5 100%)",
@@ -86,7 +110,7 @@ const RealWord = () => {
           <span className="text-[14px] leading-[18px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             business value
           </span>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

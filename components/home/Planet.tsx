@@ -3,6 +3,7 @@ import { useInViewport, useLocalStorageState } from "ahooks";
 import { useStatistics } from "@/hooks/useApi";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Grid } from "antd-mobile";
+import { motion } from "framer-motion";
 
 const Planet = () => {
   const { isMobile } = useWindowSize();
@@ -80,13 +81,17 @@ const Planet = () => {
 
 const ItemView = () => {
   return (
-    <div className="w-[266px] h-[240px] md:w-[13.85vw] md:h-[12.5vw]">
+  <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+    initial={{ scale: 0 }}
+    animate={{ scale: 1}} className="w-[266px] h-[240px] md:w-[13.85vw] md:h-[12.5vw]">
       <img src="/image-planet.png" className="w-full h-[150px] md:h-[7.8vw] rounded-[8px]" />
       <span className="font-[600] text-[14px] text-[#535145] md:text-[0.73vw] md:leading-[0.94vw]">
         Join the fun and grab your share of 🎄1,000,000,000 $HEYO🎄 packed with
         surprises, laughter, and good vibes!  
       </span>
-    </div>
+    </motion.div>
   );
 };
 
