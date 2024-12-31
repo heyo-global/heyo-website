@@ -11,7 +11,6 @@ import RealWorld from "@/components/home/RealWorld";
 import Landmark from "@/components/home/Landmark";
 import Planet from "@/components/home/Planet";
 
-
 export default function Home() {
   const { height } = useWindowSize();
   const ref = useRef(null);
@@ -35,10 +34,7 @@ export default function Home() {
         <Header />
       </div>
 
-      <div
-        className="w-full h-screen overflow-y-scroll  overflow-x-hidden"
-        ref={ref}
-      >
+      <div className="body" ref={ref}>
         <PageOne />
         <PageTwo />
         <RealWorld />

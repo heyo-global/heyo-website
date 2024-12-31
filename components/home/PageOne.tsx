@@ -5,7 +5,7 @@ const PageOne = () => {
   const {isMobile} = useWindowSize();
 
   return (
-    <div className="w-screen h-screen relative overflow-hidden text-[#535145]">
+    <section className="relative overflow-hidden text-[#535145]">
       
       <div className="font-[800] text-[120px] h-[50vh] leading-[130px] flex flex-col items-center justify-center pt-[10vw]">
         <span>The World's First</span>
@@ -28,7 +28,7 @@ const PageOne = () => {
         <img src="/Hotspots-07.svg" alt="" className="img-disabled absolute bottom-[8vw] right-[24vw] z-[300] w-[74px] h-[108px] marker4 "/>
       </div>
 
-    </div>
+    </section>
   );
 };
 

@@ -40,7 +40,7 @@ const PageTwo = () => {
   }, []);
 
   return (
-    <div className="w-screen h-screen overflow-hidden relative flex justify-center items-center flex-col ">
+    <section className="overflow-hidden relative flex justify-center items-center flex-col ">
       <img
         src="/image-footer.png"
         className="w-[2186px] h-[230px] absolute bottom-0 -left-[20px] z-[10] img-disabled"
@@ -148,7 +148,7 @@ const PageTwo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

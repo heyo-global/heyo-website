@@ -2,7 +2,7 @@ import React from "react";
 
 const Landmark = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center flex-col text-[#535145]">
+    <section className=" flex justify-center items-center flex-col text-[#535145]">
       <div className="font-[800] text-[46px]">Landmark Manager</div>
 
       <div className="flex justify-center items-center gap-[42px] mt-[80px]">
@@ -85,7 +85,7 @@ const Landmark = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

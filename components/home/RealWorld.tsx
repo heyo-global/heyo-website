@@ -2,7 +2,7 @@ import React from "react";
 
 const RealWord = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center flex-col text-[#535145]">
+    <section className=" flex justify-center items-center flex-col text-[#535145]">
       <div className="font-[800] text-[46px]">Providing A Global Lifestyle</div>
 
       <div className="flex justify-center items-center mt-[100px]">
@@ -88,7 +88,7 @@ const RealWord = () => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
