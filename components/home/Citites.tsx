@@ -24,15 +24,15 @@ const Cities = ({
 }) => {
   const [fronts, setFronts] = useState<number[]>([]);
   const [backs, setBacks] = useState<number[]>([]);
-  useEffect(() => { 
+  useEffect(() => {
     let startValue = start > 5 ? start - 5 : start;
-    let endValue = startValue ;
+    let endValue = startValue;
     let frontArr: number[] = formatData(startValue);
     let backArr: number[] = formatData(endValue);
 
     setFronts(frontArr);
     setBacks(backArr);
-    if(end <= endValue) return;
+    if (end <= endValue) return;
     const timer = setInterval(() => {
       startValue += 1;
       endValue += 1;
@@ -50,18 +50,9 @@ const Cities = ({
 
   return (
     <div className="cities md:gap-[10px] gap-[10px]">
-      {
-        end < 1000 &&
-        <Flipper front={0} back={0} />
-      }
-      {
-        end < 100 &&
-        <Flipper front={0} back={0} />
-      } 
-      {
-        end < 10 &&
-        <Flipper front={0} back={0} />
-      } 
+      {end < 1000 && <Flipper front={0} back={0} />}
+      {end < 100 && <Flipper front={0} back={0} />}
+      {end < 10 && <Flipper front={0} back={0} />}
       {fronts.map((item: number, index: number) => (
         <Flipper front={item} back={backs[index]} />
       ))}

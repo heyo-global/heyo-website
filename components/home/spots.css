@@ -4,11 +4,7 @@
   text-align: center;
   justify-content: center;
 }
-
-/* .FlipTimeClock .M-Flipper {
-  margin: 0 20px;
-} */
-
+  
 .FlipTimeClock .M-Flipper {
   display: inline-block;
   position: relative;
@@ -17,9 +13,9 @@
   line-height: 8.54vw;
   /* border: solid 1px #FFFFFF0D; */
   border-radius: 6px;
-  background: #171500;
+  background: #ffffff;
   font-size: 6.25vw;
-  color: #ffea00;
+  /* color: #ffea00; */
   /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
   text-align: center;
 }
@@ -40,7 +36,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  background: #171500;
+  background: #ffffff;
   overflow: hidden;
   box-sizing: border-box;
 }

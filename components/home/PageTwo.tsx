@@ -22,13 +22,13 @@ const PageTwo = () => {
     }
   );
   const [ownedCount, setOwnedCount] = useLocalStorageState<number>(
-    "heyo-ownedCount",
+    "heyo-weekly_trading_landmark",
     {
       defaultValue: 0,
     }
   );
   const [mayorsCount, setMayorsCount] = useLocalStorageState<number>(
-    "heyo-mayorsCount",
+    "heyo-weekly_trading_volume",
     {
       defaultValue: 0,
     }
@@ -40,22 +40,30 @@ const PageTwo = () => {
   }, []);
 
   return (
-    <section id="DATA" className="overflow-hidden relative flex justify-center items-center flex-col ">
+    <section
+      id="DATA"
+      className="overflow-hidden relative flex justify-center items-center flex-col "
+    >
       <img
         src="/image-footer.png"
         className="w-[2186px] h-[230px] md:w-[113.85vw] md:h-[12vw] absolute bottom-0 -left-[20px] z-[10] img-disabled"
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center ">
-        <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">Real-time Portfolio</span>
+      <div className="flex flex-col justify-center items-center md:-mt-[2vw]">
+        <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
+          Real-time Portfolio
+        </span>
 
-        <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col ">
+        <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col md:mt-[3vw]">
           <div
             ref={ref}
-            className="md:w-[26vw] md:h-[13.54vw] px-[20px]  w-[80vw]  md:pt-[0.5vw] 
+            className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] 
              h-[35.7vw] -mt-[36vw] md:-mt-[1vw] rounded-[3.2vw] flex flex-col 
-              justify-center items-center bg-[#F1DE00] md:rounded-[1.56vw] relative z-[15] gap-2"
+              justify-center items-center   md:rounded-[1.56vw] relative z-[15] gap-2 !text-[#00782D]"
+            style={{
+              background: "linear-gradient(180deg, #B1F4CA 0%, #D5FFE5 100%)",
+            }}
           >
             {inViewport && data && (
               <Citites
@@ -70,16 +78,19 @@ const PageTwo = () => {
                 }}
               />
             )}
-            <span className="text-[#645A00] font-[400] text-[3.2vw] md:text-[1.6vw] md:mt-[0vw]">
-              Unlocked Cities
+            <span className="text-[#60AB7C] font-[800] text-[3.2vw] md:text-[20px] md:mt-[0.6vw]">
+              Covered Cities
             </span>
-            <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
+            <div className="md:h-[6px] h-[2px] w-full bg-[#B1F4CA] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.5vw] z-50"></div>
           </div>
 
           <div
-            className="md:w-[26vw] md:h-[13.54vw] md:ml-[3vw] w-[80vw] h-[35.7vw]  md:pt-[0.5vw] 
+            className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] 
            px-[20px] mt-[6vw]  md:-mt-[1vw] flex flex-col justify-center items-center 
-            bg-[#221F00] md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15]"
+            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#BF1111]"
+            style={{
+              background: "linear-gradient(180deg, #FECFCF 0%, #FFE3E3 100%)",
+            }}
           >
             {inViewport && data && (
               <FilpClock
@@ -94,57 +105,63 @@ const PageTwo = () => {
                 }}
               />
             )}
-            <span className="text-[#CAB700] font-[400] text-[3.2vw] md:text-[1.6vw] mt-[2vw] md:mt-[0vw]">
-              Created Spots
+            <span className="text-[#BF1111] font-[800] text-[3.2vw] md:text-[1.04vw] mt-[2vw] md:mt-[0.6vw]">
+              Landmarks
             </span>
-            <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.6vw] z-50"></div>
+            <div className="md:h-[6px] h-[2px] w-full bg-[#FECFCF] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
           </div>
         </div>
 
-        <div className="w-full  md:flex-1  relative flex md:justify-center items-center md:flex-row flex-col-reverse ">
+        <div className="w-full  md:flex-1  relative flex md:justify-center items-center md:flex-row flex-col-reverse md:mt-[2vw]">
           <div
-            className="md:w-[26vw] md:h-[13.54vw] md:mr-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
-           mt-[6vw]  md:mt-[1vw] flex flex-col justify-center items-center bg-[#221F00]  md:pt-[0.5vw]
-            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15]"
+            className="md:w-[26vw] md:h-[14.5vw] md:mr-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
+           mt-[6vw]  md:mt-[1vw] flex flex-col justify-center items-center  md:pt-[0.5vw]
+            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#9D6E27]"
+            style={{
+              background: "linear-gradient(180deg, #FEE4BD 0%, #FFF1DB 100%)",
+            }}
           >
             {inViewport && data && (
               <FilpClock
                 start={
-                  ownedCount || data.point_owner_num > 20
-                    ? data.point_owner_num - 20
-                    : data.point_owner_num
+                  ownedCount || data.weekly_trading_landmark > 5
+                    ? data.weekly_trading_landmark - 5
+                    : data.weekly_trading_landmark
                 }
-                end={data.point_owner_num || ownedCount}
+                end={data.weekly_trading_landmark || ownedCount}
                 onFinish={() => {
-                  setSpotCount(data.point_owner_num);
+                  setSpotCount(data.weekly_trading_landmark);
                 }}
               />
             )}
-            <span className="text-[#CAB700] font-[400] text-[3.2vw] md:text-[1.6vw] mt-[2vw] md:mt-[0vw]">
-              Spots Owned
+            <span className="text-[#9D6E27] font-[800] text-[3.2vw] md:text-[1.04vw] mt-[2vw] md:mt-[0.6vw]">
+              Weekly Trading Landmark
             </span>
-            <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.6vw] z-50"></div>
+            <div className="md:h-[6px] h-[2px] w-full bg-[#FEE4BD] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
           </div>
 
           <div
-            className="md:w-[26vw] md:h-[13.54vw] px-[20px] w-[80vw] h-[35.7vw] mt-[6vw] md:mt-[1vw] md:pt-[0.5vw] rounded-[3.2vw] flex flex-col 
-           justify-center items-center bg-[#F1DE00] md:rounded-[1.56vw] relative z-[15] gap-2"
+            className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] h-[35.7vw] mt-[6vw] md:mt-[1vw] md:pt-[0.5vw] rounded-[3.2vw] flex flex-col 
+           justify-center items-center  md:rounded-[1.56vw] relative z-[15] gap-2 !text-[#044F83]"
+            style={{
+              background: "linear-gradient(180deg, #B2DEFD 0%, #DEF2FF 100%)",
+            }}
           >
             {inViewport && data && (
               <Citites
                 start={
-                  mayorsCount || data.mayors > 5 ? data.mayors - 5 : data.mayors
+                  mayorsCount || data.weekly_trading_volume > 5 ? data.weekly_trading_volume - 5 : data.weekly_trading_volume
                 }
-                end={data.mayors || mayorsCount}
+                end={data.weekly_trading_volume || mayorsCount}
                 onFinish={() => {
-                  setCityCount(data.mayors);
+                  setCityCount(data.weekly_trading_volume);
                 }}
               />
             )}
-            <span className="text-[#645A00] font-[400] text-[3.2vw] md:text-[1.6vw] md:mt-[0vw]">
-              Mayors
+            <span className="text-[#044F83] font-[800] text-[3.2vw] md:text-[1.04vw] md:mt-[0.6vw]">
+              Weekly Trading Volume(USDT)
             </span>
-            <div className="md:h-[6px] h-[2px] w-full bg-[#FFEA00] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.88vw] z-50"></div>
+            <div className="md:h-[6px] h-[2px] w-full bg-[#B2DEFD] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.5vw] z-50"></div>
           </div>
         </div>
       </div>

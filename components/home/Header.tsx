@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import AppDialog from "./AppDialog";
+import { motion } from "framer-motion";
 
 const menus = [
   {
@@ -48,18 +49,22 @@ const Header = () => {
       </div>
       <div className="flex-grow flex justify-center items-center gap-[30px] md:gap-[1.56vw]">
         {menus.map((item: any) => (
-          <a
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             key={item.url}
             href={item.url}
-            className="font-[600] px-[12px] leading-[11.5vw] md:leading-[6vw] md:h-[6.0vw] h-[11.5vw] text-[22px] md:text-[1.15vw] !text-[#535145] hover:scale-105 cursor-pointer"
+            className="font-[600] px-[12px] leading-[11.5vw] md:leading-[6vw] md:h-[6.0vw] h-[11.5vw] text-[22px] md:text-[1.15vw] !text-[#535145] cursor-pointer"
           >
             {item.label}
-          </a>
+          </motion.a>
         ))}
       </div>
       <div className="flex items-center gap-[30px] md:gap-[1.56vw]">
-        <div
-          className="flex justify-center items-center gap-[8px] !text-[#535145] cursor-pointer hover:scale-105 font-[800]"
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex justify-center items-center gap-[8px] !text-[#535145] cursor-pointer font-[800]"
           onClick={() => setShow(true)}
         >
           <img
@@ -68,7 +73,7 @@ const Header = () => {
             className="w-[24px] h-[20px] img-disabled"
           />
           Telegram Mini App
-        </div>
+        </motion.div>
         <Link
           href="https://app.heyoplanet.com"
           target="_blank"

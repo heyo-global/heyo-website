@@ -17,3 +17,20 @@ export const useStatistics = () => {
     retryCount: -1 
   });
 };
+
+const getNews = () => { 
+  return fetcher(null, `${getHost()}/website/api/v1/news`, {
+    method: "GET",
+    headers: new Headers({
+      "Content-Type": "application/json" 
+    }),
+  });
+};
+
+export const useNews = () => {
+  return useRequest(getNews, {
+    manual: true,
+    cacheKey: 'heyo-getNews',
+    retryCount: -1 
+  });
+};

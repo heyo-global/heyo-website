@@ -2,7 +2,8 @@ import { API_ERROR_CODES, BizError, PageError } from "./apiErrorCodes";
 import { HttpError } from "./apiErrorCodes";
 
 export const getHost = () => {
-  return process.env.NEXT_PUBLIC_API_ROOT;
+  // return process.env.NEXT_PUBLIC_API_ROOT;
+  return "https://api.test.heyo.ebunker.io"
 };
 
 export const fetcher = (t: any, api: string, args: any) => {
