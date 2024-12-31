@@ -215,3 +215,20 @@ section {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+*::-webkit-scrollbar {
+  width: 6px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+  }
+  
+  /* 兼容Firefox、IE */
+  * {
+  scrollbar-width: 6px;
+  scrollbar-base-color: green;
+  scrollbar-track-color: red;
+  scrollbar-arrow-color: blue;
+  }

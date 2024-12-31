@@ -12,7 +12,30 @@ interface New {
   jump_url: string;
   status: number;
 }
-
+const itemVariants = {
+  open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+          y: { stiffness: 1000, velocity: -100 },
+      },
+  },
+  closed: {
+      y: 50,
+      opacity: 0,
+      transition: {
+          y: { stiffness: 1000 },
+      },
+  },
+}
+const navVariants = {
+  open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+}
 const Planet = () => {
   const { isMobile } = useWindowSize();
   const ref = useRef(null);
@@ -39,7 +62,10 @@ const Planet = () => {
         <span className="font-[800] text-[46px] leading-[64px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           The Latest on Heyo Planet
         </span>
-        <div className="w-full h-[50vh] overflow-y-auto mt-[2vw]">
+        <motion.div className="w-full h-[50vh] overflow-x-hidden overflow-y-auto mt-[2vw]" ref={ref} 
+        initial={false}
+        animate={inViewport ? "open" : "closed"}
+        variants={navVariants}>
           <Grid columns={4} gap={16}>
             {data &&
               data.map((item: New) => (
@@ -48,7 +74,7 @@ const Planet = () => {
                 </Grid.Item>
               ))}
           </Grid>
-        </div>
+        </motion.div>
       </div>
 
       <div
@@ -94,8 +120,7 @@ const ItemView = ({ item }: { item: New }) => {
     <motion.div
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
+      variants={itemVariants}
       className="w-[266px] h-[240px] md:w-[13.85vw] md:h-[12.5vw]"
       onClick={() => {
         window.open(item.jump_url, "_blank");
