@@ -38,9 +38,9 @@ export default function Home() {
         className="w-full h-screen overflow-y-scroll  overflow-x-hidden"
         ref={ref}
       >
+        <PageOne setShow={setShowApp} />
         <Landmark />
         <RealWorld />
-        <PageOne setShow={setShowApp} />
         <PageTwo setShow={setShowApp} />
       </div>
 

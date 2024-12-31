@@ -16,7 +16,7 @@ const AppDialog = ({ show, setShow }: any) => {
       visible={show}
       className="relative"
       closeOnMaskClick={false}
-      getContainer={document.getElementById("root")}
+      getContainer={document && document.getElementById("root")}
       bodyStyle={{
         backgroundColor: "transparent",
         width: isMobile ? "100vw" : "19vw",
