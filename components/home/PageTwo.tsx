@@ -4,6 +4,7 @@ import FilpClock from "./Spots";
 import { useInViewport, useLocalStorageState } from "ahooks";
 import { useStatistics } from "@/hooks/useApi";
 import useWindowSize from "@/hooks/useWindowSize";
+import CountUp, { CountUpProps } from "react-countup";
 
 const PageTwo = () => {
   const { isMobile } = useWindowSize();
@@ -55,11 +56,23 @@ const PageTwo = () => {
           Real-time Portfolio
         </span>
 
-        <div className="w-full md:flex-1 relative flex justify-center items-center md:flex-row flex-col md:mt-[3vw]">
+        <div className="mt-[1vw] relative flex flex-col justify-center items-center w-full h-[24vw] md:w-[74vw] md:h-[15.8vw] bg-[url(/bg-weekly-usdt.svg)] bg-no-repeat bg-contain">
+          <span className="text-[#43ACE9] font-[800] text-[3.2vw] md:text-[1vw] w-[80vw] md:w-[40vw] text-center absolute top-[1vw] left-1/2 -ml-[40vw] md:-ml-[20vw]">
+            Weekly Trading Volume (USDT)
+          </span>
+          <CountUp
+            start={mayorsCount || 0}
+            end={(data && data.weekly_trading_volume) || 0}
+            separator=","
+            className="font-[700] text-[44px] md:text-[10vw] text-[#43ACE9]"
+          />
+        </div>
+
+        <div className="w-full relative flex justify-center items-center md:flex-row flex-col md:mt-[2vw] gap-[8px] md:gap-[0px]">
           <div
             ref={ref}
             className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] 
-             h-[35.7vw] -mt-[36vw] md:-mt-[1vw] rounded-[3.2vw] flex flex-col 
+             h-[35.7vw] rounded-[3.2vw] flex flex-col 
               justify-center items-center   md:rounded-[1.56vw] relative z-[15] gap-2 !text-[#00782D]"
             style={{
               background: "linear-gradient(180deg, #B1F4CA 0%, #D5FFE5 100%)",
@@ -86,7 +99,7 @@ const PageTwo = () => {
 
           <div
             className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] 
-           px-[20px] mt-[6vw]  md:-mt-[1vw] flex flex-col justify-center items-center 
+           px-[20px] flex flex-col justify-center items-center 
             md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#BF1111]"
             style={{
               background: "linear-gradient(180deg, #FECFCF 0%, #FFE3E3 100%)",
@@ -110,12 +123,10 @@ const PageTwo = () => {
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FECFCF] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
           </div>
-        </div>
 
-        <div className="w-full  md:flex-1  relative flex md:justify-center items-center md:flex-row flex-col-reverse md:mt-[2vw]">
           <div
-            className="md:w-[26vw] md:h-[14.5vw] md:mr-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
-           mt-[6vw]  md:mt-[1vw] flex flex-col justify-center items-center  md:pt-[0.5vw]
+            className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
+            flex flex-col justify-center items-center  md:pt-[0.5vw]
             md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#9D6E27]"
             style={{
               background: "linear-gradient(180deg, #FEE4BD 0%, #FFF1DB 100%)",
@@ -138,30 +149,6 @@ const PageTwo = () => {
               Weekly Trading Landmark
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FEE4BD] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
-          </div>
-
-          <div
-            className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] h-[35.7vw] mt-[6vw] md:mt-[1vw] md:pt-[0.5vw] rounded-[3.2vw] flex flex-col 
-           justify-center items-center  md:rounded-[1.56vw] relative z-[15] gap-2 !text-[#044F83]"
-            style={{
-              background: "linear-gradient(180deg, #B2DEFD 0%, #DEF2FF 100%)",
-            }}
-          >
-            {inViewport && data && (
-              <Citites
-                start={
-                  mayorsCount || data.weekly_trading_volume > 5 ? data.weekly_trading_volume - 5 : data.weekly_trading_volume
-                }
-                end={data.weekly_trading_volume || mayorsCount}
-                onFinish={() => {
-                  setCityCount(data.weekly_trading_volume);
-                }}
-              />
-            )}
-            <span className="text-[#044F83] font-[800] text-[3.2vw] md:text-[1.04vw] md:mt-[0.6vw]">
-              Weekly Trading Volume(USDT)
-            </span>
-            <div className="md:h-[6px] h-[2px] w-full bg-[#B2DEFD] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.5vw] z-50"></div>
           </div>
         </div>
       </div>

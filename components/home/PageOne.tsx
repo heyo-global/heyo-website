@@ -10,13 +10,13 @@ const PageOne = () => {
   return (
     <section id="INTRO" className="relative overflow-hidden text-[#535145]">
       
-      <motion.div ref={ref} initial={{opacity: 0}} animate={{opacity: inViewport?1:0}} className="font-[800] text-[30px] md:text-[6.25vw] h-[50vh] leading-[40px] md:leading-[6.77vw] flex flex-col items-center justify-center pt-[10vw]">
+      <motion.div ref={ref} initial={{opacity: 0}} animate={{opacity: inViewport?1:0}} className="font-[800] text-[30px] md:text-[6.25vw] h-[40vh] md:h-[50vh] leading-[40px] md:leading-[6.77vw] flex flex-col items-center justify-center pt-[10vw]">
         <span>The World's First</span>
         <span>Web3 LBS Lifestyle App</span>
         <span className="font-[500] text-[12px] md:text-[1.82vw] leading-[14px] md:leading-[2vw] mt-[1vw]">Seamlessly move from Web2 to Web3 in daily lives</span> 
       </motion.div>
 
-      <div className=" relative w-full  h-[50vh] overflow-hidden">
+      <div className=" relative w-full  h-[60vh] md:h-[50vh] overflow-hidden">
         <img
           src="/bg-earth.svg"
           className="w-[1528px] h-[413px] md:w-[79.6vw] md:h-[21.5vw] img-disabled absolute bottom-[0vw] left-1/2 -ml-[39.8vw] z-[10]"

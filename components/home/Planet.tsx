@@ -14,28 +14,28 @@ interface New {
 }
 const itemVariants = {
   open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-          y: { stiffness: 1000, velocity: -100 },
-      },
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
   },
   closed: {
-      y: 50,
-      opacity: 0,
-      transition: {
-          y: { stiffness: 1000 },
-      },
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
   },
-}
+};
 const navVariants = {
   open: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
   },
   closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
-}
+};
 const Planet = () => {
   const { isMobile } = useWindowSize();
   const ref = useRef(null);
@@ -62,11 +62,14 @@ const Planet = () => {
         <span className="font-[800] text-[30px] leading-[40px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           The Latest on Heyo Planet
         </span>
-        <motion.div className="w-full h-[50vh] overflow-x-hidden overflow-y-auto mt-[2vw]" ref={ref} 
-        initial={false}
-        animate={inViewport ? "open" : "closed"}
-        variants={navVariants}>
-          <Grid columns={4} gap={16}>
+        <motion.div
+          className="w-full h-[50vh] overflow-x-hidden overflow-y-auto mt-[2vw] flex flex-col items-center"
+          ref={ref}
+          initial={false}
+          animate={inViewport ? "open" : "closed"}
+          variants={navVariants}
+        >
+          <Grid columns={isMobile? 1 :4} gap={16}>
             {data &&
               data.map((item: New) => (
                 <Grid.Item key={item.id}>
@@ -78,13 +81,13 @@ const Planet = () => {
       </div>
 
       <div
-        className="flex items-center justify-center text-[#535145] font-[600] text-[16px] gap-[40px] md:text-[0.83vw] md
+        className="flex flex-col md:flex-row items-center justify-center text-[#535145] font-[600] text-[16px] gap-4 md:gap-[40px] md:text-[0.83vw] md
       :gap-[2vw]"
       >
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => window.open("https://x.com/HeyoPlanet","_blank")}
+          onClick={() => window.open("https://x.com/HeyoPlanet", "_blank")}
           className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
         >
           <img src="/icon-x.svg" alt="" className="w-[14px] h-[14px]" />
@@ -94,7 +97,9 @@ const Planet = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => window.open("https://t.me/heyoplanetofficial","_blank")}
+          onClick={() =>
+            window.open("https://t.me/heyoplanetofficial", "_blank")
+          }
           className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
         >
           <img src="/icon-t.svg" alt="" className="w-[20px] h-[16px]" />
