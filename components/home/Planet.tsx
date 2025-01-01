@@ -50,7 +50,7 @@ const Planet = () => {
   return (
     <section
       id="COMMUNITY"
-      className=" overflow-hidden relative flex justify-center items-center flex-col "
+      className=" overflow-hidden relative flex md:justify-center items-center flex-col justify-around"
     >
       <img
         src="/image-footer.png"
@@ -59,7 +59,7 @@ const Planet = () => {
       />
 
       <div className="flex flex-col justify-center items-center ">
-        <span className="font-[800] text-[30px] leading-[40px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
+        <span className="font-[800] text-[20px] leading-[30px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           The Latest on Heyo Planet
         </span>
         <motion.div
@@ -69,7 +69,7 @@ const Planet = () => {
           animate={inViewport ? "open" : "closed"}
           variants={navVariants}
         >
-          <Grid columns={isMobile? 1 :4} gap={16}>
+          <Grid columns={isMobile ? 1 : 4} gap={isMobile ? 4 : 16}>
             {data &&
               data.map((item: New) => (
                 <Grid.Item key={item.id}>
