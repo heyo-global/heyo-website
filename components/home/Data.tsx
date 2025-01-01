@@ -6,7 +6,7 @@ import { useStatistics } from "@/hooks/useApi";
 import useWindowSize from "@/hooks/useWindowSize";
 import CountUp, { CountUpProps } from "react-countup";
 
-const PageTwo = () => {
+const Data = () => {
   const { isMobile } = useWindowSize();
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
@@ -156,4 +156,4 @@ const PageTwo = () => {
   );
 };
 
-export default React.memo(PageTwo);
+export default React.memo(Data);

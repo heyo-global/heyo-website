@@ -15,7 +15,7 @@ const RealWord = () => {
       </div>
 
       <div
-        className="flex justify-center items-center mt-[20px] md:mt-[4.2vw]"
+        className="flex justify-between items-center relative mt-[20px] md:mt-[4.2vw] md:w-[57.2vw] h-[587px] md:h-[30.57vw]"
         ref={ref}
       >
         <motion.div
@@ -50,9 +50,10 @@ const RealWord = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }} 
-          className="rounded-[20px] w-[339px] h-[587px] md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
+          className="rounded-[20px] absolute top-0 left-1/2 md:-ml-[8.83vw] z-100 w-[339px] h-[587px] md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[40px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFF1DB 0%, #FFFBF4 100%)",
+            boxShadow: '0px 0px 30px 0px #645A000D'
           }}
         >
           <span className="text-[30px] leading-[42px] font-[800] md:text-[1.56vw] md:leading-[2.2vw]">

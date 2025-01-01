@@ -1,10 +1,10 @@
 "use client";
 import PageOne from "@/components/home/PageOne";
-import PageTwo from "@/components/home/PageTwo";
+import PageTwo from "@/components/home/Data";
 import useWindowSize from "@/hooks/useWindowSize";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useScroll } from "ahooks";
-import HeaderTwo from "@/components/home/HeaderTwo";
+import Data from "@/components/home/Data";
 import Header from "@/components/home/Header";
 import AppDialog from "@/components/home/AppDialog";
 import RealWorld from "@/components/home/RealWorld";
@@ -38,7 +38,7 @@ export default function Home() {
 
       <div id="outer" className="body" ref={ref}>
         <PageOne />
-        <PageTwo />
+        <Data />
         <RealWorld />
         <Landmark />
         <Planet />
