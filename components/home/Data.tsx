@@ -62,8 +62,8 @@ const Data = () => {
           Real-time Portfolio
         </span>
 
-        <div className="mt-[1vw] relative flex flex-col justify-center items-center w-full h-[24vw] md:w-[74vw] md:h-[15.8vw] bg-[url(/bg-weekly-usdt.svg)] bg-no-repeat bg-contain">
-          <span className="text-[#43ACE9] font-[800] text-[3.2vw] md:text-[1vw] w-[80vw] md:w-[40vw] text-center absolute top-[1vw] left-1/2 -ml-[40vw] md:-ml-[20vw]">
+        <div className="mt-[1vw] relative rounded-[16px] flex flex-col justify-center items-center w-full h-[24vw] md:w-[74vw] md:h-[15.8vw] bg-[url(/bg-weekly-usdt.svg)] bg-no-repeat bg-cover">
+          <span className="text-[#43ACE9] font-[800] text-[3.2vw] md:text-[1vw] w-[80vw] md:w-[40vw] text-center absolute top-[10px] md:top-[1vw] left-1/2 -ml-[40vw] md:-ml-[20vw]">
             Weekly Trading Volume (USDT)
           </span>
           {
@@ -72,12 +72,12 @@ const Data = () => {
               start={ 0 }
               end={(data && data.weekly_trading_volume) || 0}
               separator=","
-              className="font-[700] text-[44px] md:text-[10vw] text-[#43ACE9]"
+              className="font-[700] text-[44px] md:text-[10vw] text-[#43ACE9] mt-[12px] md:mt-0"
             />
           }
         </div>
 
-        <div className="w-full relative flex justify-center items-center md:flex-row flex-col md:mt-[2vw] gap-[8px] md:gap-[0px]">
+        <div className="w-full relative flex justify-center items-center md:flex-row flex-col md:mt-[2vw] gap-[8px] md:gap-[0px] mt-[12px] ">
           <div
             ref={ref}
             className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] 

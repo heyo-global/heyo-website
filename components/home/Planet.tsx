@@ -58,12 +58,12 @@ const Planet = () => {
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center pt-[30px] md:pt-0">
         <span className="font-[800] text-[20px] leading-[30px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
           The Latest on Heyo Planet
         </span>
         <motion.div
-          className="w-full h-[50vh] overflow-x-hidden overflow-y-auto mt-[2vw] flex flex-col items-center"
+          className="w-full h-[60vh] md:h-[50vh] overflow-x-hidden overflow-y-auto mt-[20px] md:mt-[2vw] flex flex-col items-center"
           ref={ref}
           initial={false}
           animate={inViewport ? "open" : "closed"}

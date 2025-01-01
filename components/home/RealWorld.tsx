@@ -8,14 +8,14 @@ const RealWord = () => {
   return (
     <section
       id="REAL-WORLD"
-      className=" flex justify-center items-center flex-col text-[#535145]"
+      className=" flex justify-center items-center flex-col text-[#535145] h-[950px] md:h-screen"
     >
-      <div className="font-[800] text-[20px]  md:text-[2.4vw] ">
+      <div className="font-[800] text-[20px]  md:text-[2.4vw] pt-[50px] md:pt-0">
         Providing A Global Lifestyle
       </div>
 
       <div
-        className="flex flex-col md:flex-row md:justify-between items-center relative mt-[20px] md:mt-[4.2vw] md:w-[57.2vw] h-[587px] md:h-[30.57vw]"
+        className="flex flex-col md:flex-row justify-between items-center relative mt-[20px] md:mt-[4.2vw] md:w-[57.2vw] h-[840px] md:h-[30.57vw]"
         ref={ref}
       >
         <motion.div
@@ -23,7 +23,7 @@ const RealWord = () => {
           whileTap={{ scale: 0.95 }}
           initial={{ scale: 0 }}
           animate={{ scale: inViewport ? 1 : 0 }}
-          className="rounded-[20px] w-[200px] h-[280px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
+          className="rounded-[20px] shrink-0 w-[200px] h-[278px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #CEFFFC 0%, #ECFFFE 100%)",
           }}
@@ -37,7 +37,7 @@ const RealWord = () => {
           <img
             src="/image-interaction.png"
             alt=""
-            className="w-[144px] h-[135px] md:my-[10px] md:w-[12.86vw] md:h-[12.55vw]"
+            className="w-[144px] h-[135px] my-[10px] md:w-[12.86vw] md:h-[12.55vw]"
           />
           <span className="text-[12px] leading-[16px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             Heyo goes beyond providing
@@ -50,7 +50,7 @@ const RealWord = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }} 
-          className="rounded-[20px] md:absolute top-0 left-1/2 md:-ml-[8.83vw] z-100 w-[260px] h-[308px] md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
+          className="rounded-[20px] shrink-0 absolute top-1/2 left-1/2 md:top-0 md:left-1/2 md:-ml-[8.83vw] z-100 w-[260px] h-[308px] -ml-[130px] -mt-[164px] md:mt-0 md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFF1DB 0%, #FFFBF4 100%)",
             boxShadow: '0px 0px 30px 0px #645A000D'
@@ -86,7 +86,7 @@ const RealWord = () => {
           whileTap={{ scale: 0.95 }}
           initial={{ scale: 0 }}
           animate={{ scale: inViewport ? 1 : 0 }}
-          className="rounded-[20px] w-[200px] h-[280px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
+          className="rounded-[20px] shrink-0 w-[200px] h-[280px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFE1E1 0%, #FFF5F5 100%)",
           }}

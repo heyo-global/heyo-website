@@ -85,7 +85,7 @@ const Header = () => {
           <span className="hidden md:inline-block">Telegram Mini App</span>
         </motion.div>
         <Link
-          href="https://app.heyoplanet.com"
+          href={isMobile?"https://t.me/HeyoPlanetBot/Heyo":"https://app.heyoplanet.com"}
           target="_blank"
           rel="noreferrer"
           className="!text-[#535145] font-[800] hover:scale-110"

@@ -15,14 +15,14 @@ const Mobile = () => {
   return (
     <section
       id="MONOPOLY"
-      className=" flex justify-center items-center flex-col text-[#535145]"
+      className=" flex justify-center items-center flex-col text-[#535145] h-[780px] md:h-screen"
     >
       <div className="font-[800] text-[20px] md:text-[2.4vw] ">
         Landmark Manager
       </div>
 
       <div
-        className="flex flex-col justify-center items-center  gap-[12px] mt-[30px] "
+        className="flex flex-col justify-center items-center  gap-[12px] mt-[20px] "
         ref={ref}
       >
         <motion.div
@@ -54,7 +54,7 @@ const Mobile = () => {
           />
         </motion.div>
 
-        <div className="flex justify-between items-center w-[328px] gap-[12px] mt-[12px] overflow-hidden ">
+        <div className="flex justify-between items-center w-[328px] gap-[12px]  overflow-hidden ">
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
