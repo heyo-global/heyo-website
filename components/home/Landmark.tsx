@@ -100,13 +100,13 @@ const Mobile = () => {
                 Landmark
               </span>
               <span className="font-[600] text-[12px] leading-[16px] mt-[8px] ">
-                · Upgrading
+                · Upgrading · Democrats 
               </span>
               <span className="font-[600] text-[12px] leading-[16px] ">
-                · Claim
+              · Claim $LAND 
               </span>
               <span className="font-[600] text-[12px] leading-[16px] ">
-                · Democrats
+              · Withdraw $USDT
               </span>
             </div>
           </motion.div>
@@ -226,14 +226,14 @@ const Pc = () => {
           <img
             src="/image-manage.png"
             alt=""
-            className="w-[342px] h-[207px] md:w-[17.8vw] md:h-[10.8vw]"
+            className="w-[342px] h-[207px] md:w-[17.8vw] md:h-[9vw]"
           />
           <div className="flex-grow flex flex-col justify-center items-center -mt-[12px]">
             <span className="font-[800] text-[30px] leading-[42px] md:text-[1.56vw] md:leading-[2.2vw]">
               Manage Landmark
             </span>
             <span className="font-[600] text-[12px] leading-[16px] md:text-[0.73vw] md:leading-[0.94vw]">
-              Upgrading · Claim · Democrats
+            Upgrading · Democrats · Claim $LAND · Withdraw $USDT
             </span>
           </div>
         </motion.div>

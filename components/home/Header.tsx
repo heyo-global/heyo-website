@@ -12,17 +12,17 @@ const menus = [
     target: false,
   },
   {
-    label: "DATA",
+    label: "Portfolio",
     url: "#DATA",
     target: false,
   },
   {
-    label: "REAL-WORLD",
+    label: "Web3 Lifestyle",
     url: "#REAL-WORLD",
     target: false,
   },
   {
-    label: "MONOPOLY GAME",
+    label: "Monopoly Game",
     url: "#MONOPOLY",
     target: false,
   },
@@ -32,7 +32,7 @@ const menus = [
   //   target: false,
   // },
   {
-    label: "COMMUNITY",
+    label: "Latest News",
     url: "#COMMUNITY",
     target: false,
   },

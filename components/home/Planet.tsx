@@ -90,7 +90,7 @@ const Planet = () => {
           onClick={() => window.open("https://x.com/HeyoPlanet", "_blank")}
           className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] bg-white md:bg-transparent cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
         >
-          <img src="/icon-x.svg" alt="" className="w-[14px] h-[14px]" />
+          <img src="/icon-x.svg" alt="" className="w-[12px] h-[12px] md:w-[0.7vw] md:h-[0.7vw]" />
           <span>https://x.com/HeyoPlanet</span>
         </motion.div>
 
@@ -102,7 +102,7 @@ const Planet = () => {
           }
           className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] bg-white md:bg-transparent cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
         >
-          <img src="/icon-t.svg" alt="" className="w-[20px] h-[16px]" />
+          <img src="/icon-t.svg" alt="" className="w-[18px] h-[14px] md:w-[1vw] md:h-[0.8vw]" />
           <span>@heyoplanetofficial</span>
         </motion.div>
 
@@ -126,7 +126,7 @@ const ItemView = ({ item }: { item: New }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       variants={itemVariants}
-      className="w-[266px] h-[220px] md:w-[13.85vw] md:h-[12.5vw]"
+      className="w-[266px] h-[230px] md:w-[13.85vw] md:h-[12.5vw]"
       onClick={() => {
         window.open(item.jump_url, "_blank");
       }}
@@ -135,9 +135,13 @@ const ItemView = ({ item }: { item: New }) => {
         src={item.img_url || "/image-planet.png"}
         className="w-full h-[150px] md:h-[7.8vw] rounded-[8px]"
       />
-      <span className="font-[600] text-[12px] text-[#535145] md:text-[0.73vw] md:leading-[0.94vw] md:mt-[0.5vw] textThree">
+      <span className="font-[600] text-[12px] text-[#535145] md:text-[0.73vw] md:leading-[0.94vw] mt-[4px] md:mt-[0.5vw] textThree">
         {item.title}
       </span>
+      <img
+        src={"/icon-x.svg"}
+        className="w-[12px] h-[12px] md:w-[0.6vw] md:h-[0.6vw] mt-[4px]"
+      />
     </motion.div>
   );
 };
