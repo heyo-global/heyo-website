@@ -82,7 +82,7 @@ const Data = () => {
             ref={ref}
             className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] 
              h-[35.7vw] rounded-[3.2vw] flex flex-col 
-              justify-center items-center   md:rounded-[1.56vw] relative z-[15] gap-2 !text-[#00782D]"
+              justify-center items-center   md:rounded-[1.56vw] relative z-[10] gap-2 !text-[#00782D]"
             style={{
               background: "linear-gradient(180deg, #B1F4CA 0%, #D5FFE5 100%)",
             }}
@@ -109,7 +109,7 @@ const Data = () => {
           <div
             className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] 
            px-[20px] flex flex-col justify-center items-center 
-            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#BF1111]"
+            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[10] !text-[#BF1111]"
             style={{
               background: "linear-gradient(180deg, #FECFCF 0%, #FFE3E3 100%)",
             }}
@@ -136,7 +136,7 @@ const Data = () => {
           <div
             className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
             flex flex-col justify-center items-center  md:pt-[0.5vw]
-            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[15] !text-[#9D6E27]"
+            md:rounded-[1.56vw] rounded-[3.2vw] relative z-[10] !text-[#9D6E27]"
             style={{
               background: "linear-gradient(180deg, #FEE4BD 0%, #FFF1DB 100%)",
             }}

@@ -50,7 +50,7 @@ const RealWord = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }} 
-          className="rounded-[20px] shrink-0 absolute top-1/2 left-1/2 md:top-0 md:left-1/2 md:-ml-[8.83vw] z-100 w-[260px] h-[308px] -ml-[130px] -mt-[164px] md:mt-0 md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
+          className="rounded-[20px] shrink-0 absolute top-1/2 left-1/2 md:top-0 md:left-1/2 md:-ml-[8.83vw] z-100 w-[260px] h-[310px] -ml-[130px] -mt-[164px] md:mt-0 md:w-[17.66vw] md:h-[30.57vw] flex flex-col items-center pt-[20px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFF1DB 0%, #FFFBF4 100%)",
             boxShadow: '0px 0px 30px 0px #645A000D'
@@ -65,7 +65,7 @@ const RealWord = () => {
           <img
             src="/image-compelling.png"
             alt=""
-            className="w-[217px] h-[113px] my-[6px] md:my-[24px] md:w-[13.28vw] md:h-[11vw]"
+            className="w-[217px] h-[128px] my-[6px] md:my-[24px] md:w-[13.28vw] md:h-[11vw] shrink-0"
           />
           <span className="text-[12px] leading-[16px] font-[600] md:text-[0.73vw] md:leading-[0.94vw]">
             Heyo introduces an innovative
@@ -86,7 +86,7 @@ const RealWord = () => {
           whileTap={{ scale: 0.95 }}
           initial={{ scale: 0 }}
           animate={{ scale: inViewport ? 1 : 0 }}
-          className="rounded-[20px] shrink-0 w-[200px] h-[280px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[16px] md:pt-[2vw]"
+          className="rounded-[20px] shrink-0 w-[200px] h-[280px] md:w-[20.1vw] md:h-[26.67vw] flex flex-col items-center pt-[24px] md:pt-[2vw]"
           style={{
             background: "linear-gradient(180deg, #FFE1E1 0%, #FFF5F5 100%)",
           }}

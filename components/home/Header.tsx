@@ -93,7 +93,7 @@ const Header = () => {
           App
         </Link>
         {isMobile && (
-          <Menubar.Root>
+          <Menubar.Root className="z-50">
             <Menubar.Menu>
               <Menubar.Trigger>
                 <div className="group flex items-center justify-between w-[20px] h-[20px]  ">
@@ -105,7 +105,7 @@ const Header = () => {
               </Menubar.Trigger>
               <Menubar.Portal>
                 <Menubar.Content
-                  className="w-[160px] max-h-[400px] overflow-y-auto rounded-md bg-white textSize12 font-[350] text-black p-[8px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[transform,opacity] [animation-duration:_400ms] [animation-timing-function:_cubic-bezier(0.16,_1,_0.3,_1)]"
+                  className="w-[160px] max-h-[400px] z-50 overflow-y-auto rounded-md bg-white textSize12 font-[350] text-black p-[8px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[transform,opacity] [animation-duration:_400ms] [animation-timing-function:_cubic-bezier(0.16,_1,_0.3,_1)]"
                   align="start"
                   sideOffset={5}
                   alignOffset={-3}
@@ -123,7 +123,7 @@ const Header = () => {
                         key={item.url}
                         href={item.url}
                         target={item.target ? "_blank" : "_self"}
-                        className=" !text-[#535145] cursor-pointer"
+                        className=" !text-[#535145] cursor-pointer w-full h-full block leading-[36px]"
                       >
                         {item.label}
                       </motion.a>
