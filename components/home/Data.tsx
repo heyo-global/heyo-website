@@ -82,7 +82,7 @@ const Data = () => {
             ref={ref}
             className="md:w-[26vw] md:h-[14.5vw] px-[20px] w-[80vw] 
              h-[35.7vw] rounded-[3.2vw] flex flex-col 
-              justify-center items-center   md:rounded-[1.56vw] relative z-[10] gap-2 !text-[#00782D]"
+              justify-center items-center md:rounded-[1.56vw] relative z-[10] gap-2 !text-[#00782D]"
             style={{
               background: "linear-gradient(180deg, #B1F4CA 0%, #D5FFE5 100%)",
             }}
@@ -100,7 +100,7 @@ const Data = () => {
                 }}
               />
             )}
-            <span className="text-[#60AB7C] font-[800] text-[3.2vw] md:text-[20px] md:mt-[0.6vw]">
+            <span className="text-[#60AB7C] font-[800] text-[3.2vw] md:text-[1.04vw] md:mt-[0.6vw]">
               Covered Cities
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#B1F4CA] absolute top-1/2 left-0 -mt-[3.9vw] md:-mt-[1.5vw] z-50"></div>
@@ -108,7 +108,7 @@ const Data = () => {
 
           <div
             className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] 
-           px-[20px] flex flex-col justify-center items-center 
+           px-[20px] flex flex-col justify-center items-center  gap-2
             md:rounded-[1.56vw] rounded-[3.2vw] relative z-[10] !text-[#BF1111]"
             style={{
               background: "linear-gradient(180deg, #FECFCF 0%, #FFE3E3 100%)",
@@ -127,7 +127,7 @@ const Data = () => {
                 }}
               />
             )}
-            <span className="text-[#BF1111] font-[800] text-[3.2vw] md:text-[1.04vw] mt-[2vw] md:mt-[0.6vw]">
+            <span className="text-[#BF1111] font-[800] text-[3.2vw] md:text-[1.04vw] md:mt-[0.6vw]">
               Landmarks
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FECFCF] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
@@ -135,7 +135,7 @@ const Data = () => {
 
           <div
             className="md:w-[26vw] md:h-[14.5vw] md:ml-[3vw] w-[80vw] h-[35.7vw] px-[20px] 
-            flex flex-col justify-center items-center  md:pt-[0.5vw]
+            flex flex-col justify-center items-center  md:pt-[0.5vw]  gap-2
             md:rounded-[1.56vw] rounded-[3.2vw] relative z-[10] !text-[#9D6E27]"
             style={{
               background: "linear-gradient(180deg, #FEE4BD 0%, #FFF1DB 100%)",
@@ -154,7 +154,7 @@ const Data = () => {
                 }}
               />
             )}
-            <span className="text-[#9D6E27] font-[800] text-[3.2vw] md:text-[1.04vw] mt-[2vw] md:mt-[0.6vw]">
+            <span className="text-[#9D6E27] font-[800] text-[3.2vw] md:text-[1.04vw] md:mt-[0.6vw]">
               Weekly Trading Landmark
             </span>
             <div className="md:h-[6px] h-[2px] w-full bg-[#FEE4BD] absolute top-1/2 left-0 -mt-[2.67vw] md:-mt-[1.5vw] z-50"></div>
