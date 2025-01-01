@@ -49,7 +49,7 @@ const Data = () => {
   return (
     <section
       id="DATA"
-      className="overflow-hidden relative flex justify-center items-center flex-col "
+      className="overflow-hidden relative flex justify-center items-center flex-col  rounded-t-[30px] bg-white md:rounded-none"
     >
       <img
         src="/image-footer.png"

@@ -8,7 +8,7 @@ const RealWord = () => {
   return (
     <section
       id="REAL-WORLD"
-      className=" flex justify-center items-center flex-col text-[#535145] h-[950px] md:h-screen"
+      className=" flex justify-center items-center flex-col text-[#535145] h-[950px] md:h-screen bg-[#FBFBFB] rounded-t-[30px] md:bg-white md:rounded-none"
     >
       <div className="font-[800] text-[20px]  md:text-[2.4vw] pt-[50px] md:pt-0">
         Providing A Global Lifestyle

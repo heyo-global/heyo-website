@@ -50,7 +50,7 @@ const Planet = () => {
   return (
     <section
       id="COMMUNITY"
-      className=" overflow-hidden relative flex md:justify-center items-center flex-col justify-around"
+      className=" overflow-hidden relative flex md:justify-center items-center flex-col justify-around bg-[#FBFBFB] rounded-t-[30px] md:bg-white md:rounded-none"
     >
       <img
         src="/image-footer.png"

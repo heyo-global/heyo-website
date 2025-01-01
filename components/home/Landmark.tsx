@@ -15,7 +15,7 @@ const Mobile = () => {
   return (
     <section
       id="MONOPOLY"
-      className=" flex justify-center items-center flex-col text-[#535145] h-[780px] md:h-screen"
+      className=" flex justify-center items-center flex-col text-[#535145] h-[780px] md:h-screen rounded-t-[30px] bg-white md:rounded-none"
     >
       <div className="font-[800] text-[20px] md:text-[2.4vw] ">
         Landmark Manager
