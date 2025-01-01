@@ -61,7 +61,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white !important; 
+  background: white !important;
 }
 
 div,
@@ -185,7 +185,7 @@ html {
 section {
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start; 
+  scroll-snap-align: start;
 }
 
 .body {
@@ -196,20 +196,20 @@ section {
   scroll-snap-type: y mandatory;
 }
 
-.textOne{
+.textOne {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.textTwo{
+.textTwo {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.textThree{
+.textThree {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -217,18 +217,22 @@ section {
 }
 
 *::-webkit-scrollbar {
-  width: 6px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-  background: #ccc;
+  width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #eee;
   border-radius: 5px;
-  }
-  
-  /* 兼容Firefox、IE */
-  * {
+}
+
+/* 兼容Firefox、IE */
+* {
   scrollbar-width: 6px;
   scrollbar-base-color: green;
   scrollbar-track-color: red;
   scrollbar-arrow-color: blue;
-  }
+}
+
+#COMMUNITY::-webkit-scrollbar {
+  width: 4px;
+}

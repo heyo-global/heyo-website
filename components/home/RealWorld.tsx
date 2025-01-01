@@ -15,7 +15,7 @@ const RealWord = () => {
       </div>
 
       <div
-        className="flex flex-col md:flex-row justify-between items-center relative mt-[20px] md:mt-[4.2vw] md:w-[57.2vw] h-[840px] md:h-[30.57vw]"
+        className="flex flex-col md:flex-row justify-between items-center relative mt-[20px] md:mt-[4.2vw] md:w-[57.2vw] h-[830px] md:h-[30.57vw]"
         ref={ref}
       >
         <motion.div
