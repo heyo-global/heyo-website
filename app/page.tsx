@@ -1,5 +1,5 @@
 "use client";
-import PageOne from "@/components/home/PageOne";
+import Intro from "@/components/home/Intro";
 import PageTwo from "@/components/home/Data";
 import useWindowSize from "@/hooks/useWindowSize";
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       <div id="outer" className="body" ref={ref}>
-        <PageOne />
+        <Intro />
         <Data />
         <RealWorld />
         <Landmark />

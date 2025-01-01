@@ -24,14 +24,19 @@ const menus = [
     url: "#MONOPOLY",
     target: false,
   },
+  // {
+  //   label: "PARTNER",
+  //   url: "#PARTNER",
+  //   target: false,
+  // },
   {
-    label: "PARTNER",
-    url: "#PARTNER",
-    target: false,
+    label:"COMMUNITY",
+    url: "#COMMUNITY",
+    target: false
   },
   {
     label: "Docs",
-    url: "",
+    url: "https://heyoplanet.gitbook.io/heyoplanet-docs",
     target: true,
   },
 ];
@@ -54,6 +59,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             key={item.url}
             href={item.url}
+            target={item.target ? "_blank" : "_self"}
             className="font-[600] px-[12px] leading-[11.5vw] md:leading-[6vw] md:h-[6.0vw] h-[11.5vw] text-[22px] md:text-[1.15vw] !text-[#535145] cursor-pointer"
           >
             {item.label}

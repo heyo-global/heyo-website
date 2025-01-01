@@ -28,17 +28,23 @@ const Data = () => {
       defaultValue: 0,
     }
   );
-  const [mayorsCount, setMayorsCount] = useLocalStorageState<number>(
-    "heyo-weekly_trading_volume",
-    {
-      defaultValue: 0,
-    }
-  );
+  // const [mayorsCount, setMayorsCount] = useLocalStorageState<number>(
+  //   "heyo-weekly_trading_volume",
+  //   {
+  //     defaultValue: 0,
+  //   }
+  // );
   const { data, run } = useStatistics();
 
   useEffect(() => {
     run();
   }, []);
+
+  // useEffect(() => {
+  //   if(data && inViewport){
+  //     setMayorsCount(data.weekly_trading_volume);
+  //   }
+  // },[data,inViewport])
 
   return (
     <section
@@ -60,12 +66,15 @@ const Data = () => {
           <span className="text-[#43ACE9] font-[800] text-[3.2vw] md:text-[1vw] w-[80vw] md:w-[40vw] text-center absolute top-[1vw] left-1/2 -ml-[40vw] md:-ml-[20vw]">
             Weekly Trading Volume (USDT)
           </span>
-          <CountUp
-            start={mayorsCount || 0}
-            end={(data && data.weekly_trading_volume) || 0}
-            separator=","
-            className="font-[700] text-[44px] md:text-[10vw] text-[#43ACE9]"
-          />
+          {
+            inViewport && 
+            <CountUp
+              start={ 0 }
+              end={(data && data.weekly_trading_volume) || 0}
+              separator=","
+              className="font-[700] text-[44px] md:text-[10vw] text-[#43ACE9]"
+            />
+          }
         </div>
 
         <div className="w-full relative flex justify-center items-center md:flex-row flex-col md:mt-[2vw] gap-[8px] md:gap-[0px]">
@@ -82,7 +91,7 @@ const Data = () => {
               <Citites
                 start={
                   cityCount || data.city_num > 1000
-                    ? data.city_num - 5
+                    ? data.city_num - 1
                     : data.city_num
                 }
                 end={data.city_num || cityCount}

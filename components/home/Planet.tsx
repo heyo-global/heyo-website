@@ -49,7 +49,7 @@ const Planet = () => {
 
   return (
     <section
-      id="PARTNER"
+      id="COMMUNITY"
       className=" overflow-hidden relative flex justify-center items-center flex-col "
     >
       <img
