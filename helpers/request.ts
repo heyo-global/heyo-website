@@ -3,7 +3,8 @@ import { HttpError } from "./apiErrorCodes";
 
 export const getHost = () => {
   // return process.env.NEXT_PUBLIC_API_ROOT;
-  return "https://api.test.heyo.ebunker.io"
+  // return "https://api.test.heyo.ebunker.io";
+  return "https://api.heyo.global";
 };
 
 export const fetcher = (t: any, api: string, args: any) => {
