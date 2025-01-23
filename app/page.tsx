@@ -9,6 +9,7 @@ import AppDialog from "@/components/home/AppDialog";
 import RealWorld from "@/components/home/RealWorld";
 import Landmark from "@/components/home/Landmark";
 import Planet from "@/components/home/Planet";
+import Experience from "@/components/home/experience";
 
 export default function Home() {
   const { height } = useWindowSize();
@@ -31,6 +32,7 @@ export default function Home() {
 
       <div id="outer" className="body" ref={ref}>
         <Intro />
+        <Experience />
         <Data />
         <RealWorld />
         <Landmark />
