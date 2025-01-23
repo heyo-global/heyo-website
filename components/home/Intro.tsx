@@ -32,7 +32,10 @@ const Mobile = () => {
       </motion.div>
 
       <div className=" relative w-full h-[50vh] overflow-hidden flex flex-col-reverse items-center">
-        <img src="/bg-earth.svg" className="w-[375px] h-[390px] img-disabled " />
+        <img
+          src="/bg-earth.svg"
+          className="w-[375px] h-[390px] img-disabled "
+        />
 
         <img
           src="/Hotspots-01.svg"
@@ -78,17 +81,49 @@ const Pc = () => {
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
   return (
-    <section id="INTRO" className="relative overflow-hidden text-[#535145]">
+    <section
+      id="INTRO"
+      className="relative w-[1376px] h-[1920px] overflow-hidden text-black bg-[url(/home/bg.png)] bg-no-repeat bg-cover"
+    >
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{ opacity: inViewport ? 1 : 0 }}
-        className="font-[800] text-[30px] md:text-[6.25vw] h-[40vh] md:h-[50vh] leading-[40px] md:leading-[6.77vw] flex flex-col items-center justify-center pt-[10vw]"
+        className="font-[800] text-[60px]  h-[40vh]  leading-[100px] flex flex-col items-center justify-center mt-[108px]"
       >
         <span>The World's First</span>
         <span>Web3 LBS Lifestyle App</span>
-        <span className="font-[500] text-[12px] md:text-[1.82vw] leading-[14px] md:leading-[2vw] mt-[1vw]">
-          Seamlessly move from Web2 to Web3 in daily lives
+        <div className="flex justify-center items-center text-black text-[24px] font-[500] leading-[36px] ">
+          <span
+            className="w-[122px] h-[36px] text-center rounded-3xl"
+            style={{
+              background: "linear-gradient(90deg, #52FEFF 0%, #00FEFF 100%)",
+            }}
+          >
+            Discover
+          </span>
+          <span
+            className="w-[102px] h-[36px] text-center rounded-3xl"
+            style={{
+              background:
+                "background: linear-gradient(270deg, #BAFE74 0%, #D4FFA8 100%)",
+            }}
+          >
+            Create
+          </span>
+          <span className="w-[48px] h-[36px] text-center ">And</span>
+          <span
+            className="w-[115px] h-[36px] text-center rounded-3xl"
+            style={{
+              background:
+                "background: linear-gradient(90deg, #FFDBF5 0%, #FFC3EE 100%)",
+            }}
+          >
+            Interact
+          </span>
+        </div>
+        <span className="font-[500] text-[24px] leading-[24px] mt-[20px]">
+          with Fascinating Landmarks Around You
         </span>
       </motion.div>
 

@@ -1,6 +1,5 @@
 "use client";
-import Intro from "@/components/home/Intro";
-import PageTwo from "@/components/home/Data";
+import Intro from "@/components/home/Intro"; 
 import useWindowSize from "@/hooks/useWindowSize";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useScroll } from "ahooks";
@@ -23,13 +22,7 @@ export default function Home() {
       
     }
   }, [scroll, height]);
-
-  // const setScroll = useCallback((index:number) => {
-  //   if(ref){
-  //     const outEle = document.getElementById('outer');
-  //     outEle && outEle.scrollTo({top: 100, behavior: 'smooth'})
-  //   }
-  // },[ref])
+ 
   return (
     <div className="flex flex-col w-screen h-screen bg-white relative">
       <div className="fixed left-0 right-0 top-0 z-[2000] h-[6.0vw]">
