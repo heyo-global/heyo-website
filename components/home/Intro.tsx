@@ -45,7 +45,7 @@ const Pc = () => {
 
   return (
     <section
-      id="INTRO"
+      id="Related"
       className="relative w-full flex flex-col items-center overflow-hidden text-black"
     >
       <div className="relative w-full h-[1720px] flex flex-col items-center overflow-hidden text-black bg-[url(/home/bg.png)] bg-no-repeat bg-cover">
@@ -167,16 +167,16 @@ const Pc = () => {
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
-              <img src="/home/banner1.png" className="w-[788px] h-[534px]" />
+              <img src="/home/banner1.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/home/banner2.png" className="w-[788px] h-[534px]" />
+              <img src="/home/banner2.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/home/banner3.png" className="w-[788px] h-[534px]" />
+              <img src="/home/banner3.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/home/banner4.png" className="w-[788px] h-[534px]" />
+              <img src="/home/banner4.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
           </Swiper>
         </div>

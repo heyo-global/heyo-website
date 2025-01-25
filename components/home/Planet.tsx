@@ -7,15 +7,9 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import {
-  FreeMode,
-  Pagination,
-  Navigation,
-  Scrollbar,
-  EffectCoverflow,
-  Autoplay,
-} from "swiper/modules";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper/modules";
+import { useRive } from "@rive-app/react-canvas";
 
 interface New {
   id: number;
@@ -61,35 +55,37 @@ const Planet = () => {
 
   return (
     <section
-      id="Planet"
+      id="Information"
       style={{
         background:
           "linear-gradient(360deg, #FFC6FF -48.81%, #F5CBFF 0.6%, #EAD3FF 40.12%, #82E1FE 103.36%, #3DAEF0 148.81%)",
       }}
-      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[878px]"
+      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[820px]"
     >
       <img
         src="/planet/title.png"
-        className="w-[1300px] h-[108px] absolute top-[40px] left-1/2 -ml-[650px] img-disabled"
+        className="w-[1300px] h-[108px] absolute top-[120px] left-1/2 -ml-[650px] img-disabled"
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center pt-[130px] text-black">
+      <div className="flex flex-col justify-center items-center pt-[70px] text-black">
         <span className="font-[800] text50  ">The Latest on Heyo Planet</span>
         <motion.div
-          className="w-full h-[60vh] overflow-x-hidden overflow-y-auto mt-[20px] flex flex-col items-center"
+          className="w-full h-[370px] overflow-x-hidden overflow-y-auto my-[60px] flex flex-col items-center"
           ref={ref}
           initial={false}
           animate={inViewport ? "open" : "closed"}
           variants={navVariants}
         >
           <Swiper
-            className="w-full h-[540px] overflow-hidden"
-            slidesPerView={3}
+            className="w-[1300px] !h-[370px] overflow-hidden"
+            slidesPerView={"auto"}
             centeredSlides={false}
             spaceBetween={30}
-            // freeMode={true}
-            modules={[Navigation]}
+            scrollbar={{
+              hide: true,
+            }}
+            modules={[Scrollbar]}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
@@ -118,25 +114,26 @@ const Information = () => {
 const ItemView = ({ item }: { item: New }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
       variants={itemVariants}
-      className="w-[266px] h-[230px] md:w-[13.85vw] md:h-[12.5vw]"
-      onClick={() => {
-        window.open(item.jump_url, "_blank");
-      }}
+      className="w-[376px] h-[368px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
     >
       <img
         src={item.img_url || "/image-planet.png"}
-        className="w-full h-[150px] md:h-[7.8vw] rounded-[8px]"
+        className="w-full h-[180px] rounded-t-[20px]"
       />
-      <span className="font-[600] text-[12px] text-[#535145] md:text-[0.73vw] md:leading-[0.94vw] mt-[4px] md:mt-[0.5vw] textThree">
+      <span className="font-[500] text16  leading-[24PX] textTwo w-[320px]">
         {item.title}
       </span>
-      <img
-        src={"/icon-x.svg"}
-        className="w-[12px] h-[12px] md:w-[0.6vw] md:h-[0.6vw] mt-[4px]"
-      />
+      <img src={"/planet/image-x.png"} className="w-[55px] h-[28px]" />
+      <div
+        onClick={() => {
+          window.open(item.jump_url, "_blank");
+        }}
+        className="w-[320px] h-[42px] cursor-pointer flex justify-center items-center gap-2 bg-white rounded group-hover:scale-110 hover:bg-white/70"
+      >
+        <span className="font-[500] text16">View Content</span>
+        <img src="/planet/icon-view.svg" className="w-[10px] h-10px]" />
+      </div>
     </motion.div>
   );
 };
@@ -144,35 +141,39 @@ const ItemView = ({ item }: { item: New }) => {
 const Share = () => {
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
-
+  const { RiveComponent } = useRive({
+    src: "/planet/share.riv",
+    stateMachines: "State Machine 1",
+    autoplay: true,
+  });
   return (
     <section
       id="Share"
       style={{
         background: "linear-gradient(180deg, #F4CCFF 0%, #FFFFFF 100%)",
       }}
-      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[780px]"
+      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[680px] -mt-[50px]"
     >
       <img
         src="/planet/share-title.png"
-        className="w-[1300px] h-[108px] absolute top-[40px] left-1/2 -ml-[650px] img-disabled"
+        className="w-[1282px] h-[108px] absolute top-[30px] left-1/2 -ml-[650px] img-disabled z-10"
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center pt-[30px] text-black">
+      <div className="flex flex-col justify-center items-center text-black">
         <span className="font-[800] text50 leading-[72PX] ">
           Ready To Create Your
         </span>
-        <span className="font-[800] text50 leading-[72PX] ">
+        <span ref={ref} className="font-[800] text50 leading-[72PX] ">
           Own Landmarks With Heyo?
         </span>
         <motion.div
-          className="w-full h-[60vh] mt-[20px] flex flex-col items-center"
-          ref={ref}
-          initial={false}
-          animate={inViewport ? "open" : "closed"}
-          variants={navVariants}
-        ></motion.div>
+          className="w-full h-[160px] flex flex-col items-center my-[30px]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: inViewport ? 1 : 0 }}
+        >
+          <RiveComponent className="w-[1000px] h-[160px]" />
+        </motion.div>
       </div>
 
       <div className="flex items-center justify-center z-10 text-[#FF6ADA] font-[500] text-24 gap-10">
