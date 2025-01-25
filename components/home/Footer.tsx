@@ -12,7 +12,7 @@ const Footer = () => {
           className="w-[180px] h-[60px] img-disabled"
           alt="Logo"
         />
-        <div className="flex w-[300px] h-full text-black font-[500] text14">
+        <div className="flex w-[440px] h-full text-black font-[500] text14">
           <div className="flex flex-col gap-3 flex-1">
             <span className="text20">RESOURCES</span>
             <span>DOCS</span>

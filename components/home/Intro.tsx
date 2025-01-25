@@ -60,10 +60,10 @@ const Pc = () => {
           <span>Web3 LBS Lifestyle App</span>
           <div
             style={{ fontSize: "24PX" }}
-            className="flex justify-center items-center gap-[12px] text-black text-[24px] font-[500] leading-[36px] mt-[20px]"
+            className="flex justify-center items-center gap-[24px] text-black text-[24px] font-[500] leading-[36px] mt-[20px]"
           >
             <span
-              className="w-[122px] h-[36px] text-center rounded-3xl"
+              className="min-w-[122px] px-[12px] py-[4px] min-h-[36px] text-center rounded-3xl"
               style={{
                 background: "linear-gradient(90deg, #52FEFF 0%, #00FEFF 100%)",
               }}
@@ -71,7 +71,7 @@ const Pc = () => {
               Discover
             </span>
             <span
-              className="w-[102px] h-[36px] text-center rounded-3xl"
+              className="min-w-[102px] min-h-[36px] px-[12px] py-[4px] text-center rounded-3xl"
               style={{
                 background:
                   " linear-gradient(270deg, #BAFE74 0%, #D4FFA8 100%)",
@@ -79,9 +79,9 @@ const Pc = () => {
             >
               Create
             </span>
-            <span className="w-[48px] h-[36px] text-center ">And</span>
+            <span className="min-w-[48px] min-h-[36px] text-center ">And</span>
             <span
-              className="w-[115px] h-[36px] text-center rounded-3xl"
+              className="min-w-[115px] min-h-[36px] px-[12px] py-[4px] text-center rounded-3xl"
               style={{
                 background:
                   "  linear-gradient(90deg, #FFDBF5 0%, #FFC3EE 100%)",
@@ -95,13 +95,13 @@ const Pc = () => {
           </span>
         </motion.div>
 
-        <div className="flex flex-col items-center w-full relative">
+        <div className="flex flex-col items-center w-full relative mt-[20px]">
           <RiveComponent className="w-[1200px] h-[1000px]" />
 
           <div className="w-[1000px] h-[100px] flex justify-between items-center absolute left-1/2 top-[40px] -ml-[500px] z-10">
             {inViewport && (
               <div
-                className="flex flex-col justify-center items-center w-[240px] h-[100px] bg-white/20 rounded-[20px] border border-[#ffffff]"
+                className="flex flex-col justify-center items-center min-w-[240px] min-h-[100px] py-[12px] px-[32px] bg-white/20 rounded-[20px] border border-[#ffffff]"
                 style={{ backdropFilter: "blur(2px)" }}
               >
                 <span
@@ -122,7 +122,7 @@ const Pc = () => {
 
             {inViewport && (
               <div
-                className="flex flex-col justify-center items-center w-[240px] h-[100px] bg-white/20 rounded-[20px] border border-[#ffffff]"
+                className="flex flex-col justify-center items-center min-w-[240px] min-h-[100px] py-[12px] px-[32px] bg-white/20 rounded-[20px] border border-[#ffffff]"
                 style={{ backdropFilter: "blur(2px)" }}
               >
                 <span
