@@ -4,7 +4,7 @@ module.exports = {
     autoprefixer: {},
     'postcss-px-to-viewport': {
       unitToConvert: 'px',
-      viewportWidth: 1376,
+      viewportWidth: 1920,
       unitPrecision: 5,
       propList: ['*'],
       viewportUnit: 'vw',
@@ -17,7 +17,7 @@ module.exports = {
       include: undefined,
       landscape: false,
       landscapeUnit: 'vw',
-      landscapeWidth: 1376
+      landscapeWidth: 1920
     }
   },
 };

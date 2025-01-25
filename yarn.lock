@@ -750,6 +750,18 @@
     "@react-spring/shared" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
+"@rive-app/canvas@2.25.4":
+  version "2.25.4"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-2.25.4.tgz#5caf9341c87d5c9556c7745f752a67adc19457dc"
+  integrity sha512-g0z2ldp77gQr8J2ePmDROq1//8ZWeLZX1myCBDrDs3TJ/tFVuBoLCo3Oa2YrLlT99jrJJU2RhPwvV3otHdn3Cw==
+
+"@rive-app/react-canvas@^4.17.6":
+  version "4.17.6"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-4.17.6.tgz#3e7c3ac9fcb8b7caf42742b2516226c0ba1a6e5f"
+  integrity sha512-gF52RIqf3euq2p6kPmO5UAlGgiWE2XmdcGNFXCbhVXKSQynMc3MAF9lwVUxbHbmjQ7fZlJJ9rcFe9cZfSi8mUg==
+  dependencies:
+    "@rive-app/canvas" "2.25.4"
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
@@ -3879,6 +3891,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swiper@^11.2.1:
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.1.tgz#0f3fcafa30301a1c76e3ef9e85979ac2daeefc18"
+  integrity sha512-62G69+iQRIfUqTmJkWpZDcX891Ra8O9050ckt1/JI2H+0483g+gq0m7gINecDqMtDh2zt5dK+uzBRxGhGOOvQA==
 
 synckit@^0.9.1:
   version "0.9.2"

@@ -4,6 +4,18 @@ import { useNews } from "@/hooks/useApi";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Grid } from "antd-mobile";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import {
+  FreeMode,
+  Pagination,
+  Navigation,
+  Scrollbar,
+  EffectCoverflow,
+  Autoplay,
+} from "swiper/modules";
 
 interface New {
   id: number;
@@ -49,74 +61,57 @@ const Planet = () => {
 
   return (
     <section
-      id="COMMUNITY"
-      className=" overflow-hidden relative flex md:justify-center items-center flex-col justify-around bg-[#FBFBFB] rounded-t-[30px] md:bg-white md:rounded-none"
+      id="Planet"
+      style={{
+        background:
+          "linear-gradient(360deg, #FFC6FF -48.81%, #F5CBFF 0.6%, #EAD3FF 40.12%, #82E1FE 103.36%, #3DAEF0 148.81%)",
+      }}
+      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[878px]"
     >
       <img
-        src="/image-footer.png"
-        className="w-[2186px] h-[230px] md:w-[113.85vw] md:h-[12vw] absolute bottom-0 -left-[20px] z-[10] img-disabled"
+        src="/planet/title.png"
+        className="w-[1300px] h-[108px] absolute top-[40px] left-1/2 -ml-[650px] img-disabled"
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center pt-[30px] md:pt-0">
-        <span className="font-[800] text-[20px] leading-[30px] md:text-[2.4vw] md:leading-[3.33vw] text-[#535145]">
-          The Latest on Heyo Planet
-        </span>
+      <div className="flex flex-col justify-center items-center pt-[130px] text-black">
+        <span className="font-[800] text50  ">The Latest on Heyo Planet</span>
         <motion.div
-          className="w-full h-[60vh] md:h-[50vh] overflow-x-hidden overflow-y-auto mt-[20px] md:mt-[2vw] flex flex-col items-center"
+          className="w-full h-[60vh] overflow-x-hidden overflow-y-auto mt-[20px] flex flex-col items-center"
           ref={ref}
           initial={false}
           animate={inViewport ? "open" : "closed"}
           variants={navVariants}
         >
-          <Grid columns={isMobile ? 1 : 4} gap={isMobile ? 4 : 16}>
+          <Swiper
+            className="w-full h-[540px] overflow-hidden"
+            slidesPerView={3}
+            centeredSlides={false}
+            spaceBetween={30}
+            // freeMode={true}
+            modules={[Navigation]}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
             {data &&
               data.map((item: New) => (
-                <Grid.Item key={item.id}>
+                <SwiperSlide key={item.id}>
                   <ItemView item={item} />
-                </Grid.Item>
+                </SwiperSlide>
               ))}
-          </Grid>
+          </Swiper>
         </motion.div>
-      </div>
-
-      <div
-        className="flex flex-col md:flex-row items-center justify-center z-10 text-[#535145] font-[600] text-[16px] gap-4 md:gap-[40px] md:text-[0.83vw] md
-      :gap-[2vw]"
-      >
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => window.open("https://x.com/HeyoPlanet", "_blank")}
-          className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] bg-white md:bg-transparent cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
-        >
-          <img src="/icon-x.svg" alt="" className="w-[12px] h-[12px] md:w-[0.7vw] md:h-[0.7vw]" />
-          <span>https://x.com/HeyoPlanet</span>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() =>
-            window.open("https://t.me/heyoplanetofficial", "_blank")
-          }
-          className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] bg-white md:bg-transparent cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
-        >
-          <img src="/icon-t.svg" alt="" className="w-[18px] h-[14px] md:w-[1vw] md:h-[0.8vw]" />
-          <span>@heyoplanetofficial</span>
-        </motion.div>
-
-        {/* <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => window.open("https://github.com/heyo-global/heyo-website","_blank")}
-          className="w-[260px] h-[42px] md:w-[13.54vw] md:h-[2.1vw] cursor-pointer flex justify-center items-center gap-[16px] border border-[#2C2100] rounded-[10px]"
-        >
-          <img src="/icon-github.svg" alt="" className="w-[22px] h-[22px]" />
-          <span>@heyo-website</span>
-        </motion.div> */}
       </div>
     </section>
+  );
+};
+
+const Information = () => {
+  return (
+    <>
+      <Planet />
+      <Share />
+    </>
   );
 };
 
@@ -146,4 +141,80 @@ const ItemView = ({ item }: { item: New }) => {
   );
 };
 
-export default React.memo(Planet);
+const Share = () => {
+  const ref = useRef(null);
+  const [inViewport] = useInViewport(ref);
+
+  return (
+    <section
+      id="Share"
+      style={{
+        background: "linear-gradient(180deg, #F4CCFF 0%, #FFFFFF 100%)",
+      }}
+      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[780px]"
+    >
+      <img
+        src="/planet/share-title.png"
+        className="w-[1300px] h-[108px] absolute top-[40px] left-1/2 -ml-[650px] img-disabled"
+        alt=""
+      />
+
+      <div className="flex flex-col justify-center items-center pt-[30px] text-black">
+        <span className="font-[800] text50 leading-[72PX] ">
+          Ready To Create Your
+        </span>
+        <span className="font-[800] text50 leading-[72PX] ">
+          Own Landmarks With Heyo?
+        </span>
+        <motion.div
+          className="w-full h-[60vh] mt-[20px] flex flex-col items-center"
+          ref={ref}
+          initial={false}
+          animate={inViewport ? "open" : "closed"}
+          variants={navVariants}
+        ></motion.div>
+      </div>
+
+      <div className="flex items-center justify-center z-10 text-[#FF6ADA] font-[500] text-24 gap-10">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() =>
+            // window.open("https://x.com/HeyoPlanet", "_blank")
+            window.open(
+              "https://heyoplanet.gitbook.io/heyoplanet-docs",
+              "_blank"
+            )
+          }
+          className="w-[320px] h-[80px] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+        >
+          <img
+            src="/planet/icon-docs.svg"
+            alt=""
+            className="w-[24px] h-[24px] "
+          />
+          <span>Heyo docs</span>
+        </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() =>
+            // window.open("https://t.me/heyoplanetofficial", "_blank")
+            window.open("https://app.heyoplanet.com", "_blank")
+          }
+          className="w-[320px] h-[80px] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+        >
+          <img
+            src="/planet/icon-website.svg"
+            alt=""
+            className="w-[24px] h-[24px] "
+          />
+          <span>heyoplanet.com</span>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default React.memo(Information);
