@@ -79,9 +79,9 @@ const Planet = () => {
         >
           <Swiper
             className="w-[1300px] !h-[370px] overflow-hidden"
-            slidesPerView={"auto"}
-            centeredSlides={false}
-            spaceBetween={30}
+            slidesPerView={3}
+            // centeredSlides={false}
+            // spaceBetween={30}
             scrollbar={{
               hide: true,
             }}
