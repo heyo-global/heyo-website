@@ -29,7 +29,7 @@ const Experience = () => {
           className="w-[1380px] h-[140px] absolute top-[0px] left-[0px]  z-[10] img-disabled"
           alt=""
         />
-        <div className="text50 leading-[64PX] font-[800] mt-[72px] flex flex-col items-center justify-center z-[100] text-black">
+        <div className="text50 leading-[64PX] font-[800] mt-[82px] flex flex-col items-center justify-center z-[100] text-black fontPP">
           <span>AI-Powered Digital Twin </span>
           <span>of the Real World</span>
         </div>

@@ -56,10 +56,10 @@ const Planet = () => {
   return (
     <section
       id="Information"
-      style={{
-        background:
-          "linear-gradient(360deg, #FFC6FF -48.81%, #F5CBFF 0.6%, #EAD3FF 40.12%, #82E1FE 103.36%, #3DAEF0 148.81%)",
-      }}
+      // style={{
+      //   background:
+      //     "linear-gradient(bottom,  #F5CBFF 0%, #EAD3FF 40.12%, #82E1FE 103.36%)",
+      // }}
       className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[820px] z-10"
     >
       <img
@@ -68,8 +68,8 @@ const Planet = () => {
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center pt-[70px] text-black">
-        <span className="font-[800] text50  ">The Latest on Heyo Planet</span>
+      <div className="flex flex-col justify-center items-center text-black ">
+        <span className="font-[800] text50 mt-[110px] fontPP">The Latest on Heyo Planet</span>
         <motion.div
           className="w-full h-[390px] overflow-x-hidden overflow-y-auto my-[60px] flex flex-col items-center"
           ref={ref}
@@ -104,10 +104,13 @@ const Planet = () => {
 
 const Information = () => {
   return (
-    <>
+    <div style={{
+      background: 'linear-gradient(360deg, #FFFFFF 0%, #F5CBFF 30%, #EAD3FF 60.12%, #82E1FE 103.36%, #3DAEF0 148.81%)'
+
+    }}>
       <Planet />
       <Share />
-    </>
+    </div>
   );
 };
 
@@ -115,7 +118,7 @@ const ItemView = ({ item }: { item: New }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="w-[376px] h-[388px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
+      className="w-[376px] h-[378px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
     >
       <img
         src={item.img_url || "/image-planet.png"}
@@ -149,10 +152,10 @@ const Share = () => {
   return (
     <section
       id="Share"
-      style={{
-        background: "linear-gradient(180deg, #F4CCFF 0%, #FFFFFF 100%)",
-      }}
-      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[680px] -mt-[50px]"
+      // style={{
+      //   background: "linear-gradient(top, #F5CBFF 0%, #FFFFFF 100%)",
+      // }}
+      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[680px] mt-[0px]"
     >
       <img
         src="/planet/share-title.png"
@@ -160,15 +163,15 @@ const Share = () => {
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center text-black">
-        <span className="font-[800] text50 leading-[72PX] ">
+      <div className="flex flex-col justify-center items-center text-black fontPP">
+        <span className="font-[800] text50 leading-[72PX]">
           Ready To Create Your
         </span>
-        <span ref={ref} className="font-[800] text50 leading-[72PX] ">
+        <span ref={ref} className="font-[800] text50 leading-[72PX]">
           Own Landmarks With Heyo?
         </span>
         <motion.div
-          className="w-full h-[160px] flex flex-col items-center my-[30px]"
+          className="w-full h-[160px] flex flex-col items-center my-[50px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: inViewport ? 1 : 0 }}
         >
@@ -176,7 +179,7 @@ const Share = () => {
         </motion.div>
       </div>
 
-      <div className="flex items-center justify-center z-10 text-[#FF6ADA] font-[500] text-24 gap-10">
+      <div className="flex items-center justify-center z-10 text-[#FF6ADA] font-[500] text24 gap-[72px]">
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

@@ -54,10 +54,10 @@ const Pc = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: inViewport ? 1 : 0 }}
           style={{ fontSize: "60PX", lineHeight: "80PX" }}
-          className="font-[800] text-[60px]  leading-[80px] flex flex-col items-center justify-center mt-[108px]"
+          className="font-[800] text-[60px]  leading-[80px] flex flex-col items-center justify-center mt-[128px]"
         >
-          <span>The World's First</span>
-          <span>Web3 LBS Lifestyle App</span>
+          <span className=" fontPP">The World's First</span>
+          <span className=" fontPP">Web3 LBS Lifestyle App</span>
           <div
             style={{ fontSize: "24PX" }}
             className="flex justify-center items-center gap-[24px] text-black text-[24px] font-[500] leading-[36px] mt-[20px]"
@@ -144,7 +144,7 @@ const Pc = () => {
         </div>
 
         <div className="flex flex-col w-full items-center -mt-[300px] z-10">
-          <span className="font-[800] text50 text-black leading-[72px]">
+          <span className="font-[800] text50 text-black leading-[72px] fontPP">
             Getting started your Heyo travel
           </span>
           <div className="flex justify-center items-center font-[500] text24 text-black gap-2">
@@ -187,8 +187,8 @@ const Pc = () => {
       </div>
 
       <div className="flex flex-col items-center w-[700px] text-black mt-[0px]">
-        <span className="font-[800] text20 ">Explore Landmarks</span>
-        <span className="font-[500] text14 leading-[20px] text-center">
+        <span className="font-[800] text24 fontPP">Explore Landmarks</span>
+        <span className="font-[500] text20 leading-[24px] text-center">
           Heyo display nearby landmarks based on your current location, helping
           you explore and discover fascinating landmarks around you.
         </span>

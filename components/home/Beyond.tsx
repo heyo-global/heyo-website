@@ -22,7 +22,7 @@ const Experience = () => {
         animate={{ opacity: inViewport ? 1 : 0 }}
         className="relative flex flex-col items-center justify-center w-[72%] z-10"
       >
-        <div className="text50 font-[800] mt-[32px] flex flex-col items-center justify-center z-[100] text-black">
+        <div className="text50 font-[800] mt-[32px] flex flex-col items-center justify-center z-[100] text-black fontPP">
           <span>Beyond Crypto</span>
         </div>
         <div className="flex justify-center items-center text-black w-[88%] pt-[20px] mb-[80px] ">
