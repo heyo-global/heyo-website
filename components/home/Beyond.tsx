@@ -14,8 +14,8 @@ const Experience = () => {
     autoplay: true,
   });
   return (
-    <section className="relative flex justify-center items-center flex-col w-full">
-      <img src="/experience/bg-bottom-right.png" className=" absolute w-[1649px] h-[2154px] -top-[100px] -right-[0px]"/>
+    <section className="relative flex justify-center items-center flex-col w-full z-10">
+      <img src="/experience/bg-bottom-right.png" className=" absolute w-[1649px] h-[2154px] -top-[300px] -right-[0px]" />
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}

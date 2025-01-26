@@ -48,7 +48,7 @@ const Pc = () => {
       id="Related"
       className="relative w-full flex flex-col items-center overflow-hidden text-black"
     >
-      <div className="relative w-full h-[1720px] flex flex-col items-center overflow-hidden text-black bg-[url(/home/bg.png)] bg-no-repeat bg-cover">
+      <div className="relative w-full h-[1760px] flex flex-col items-center overflow-hidden text-black bg-[url(/home/bg.png)] bg-no-repeat bg-cover">
         <motion.div
           ref={ref}
           initial={{ opacity: 0 }}
@@ -63,7 +63,7 @@ const Pc = () => {
             className="flex justify-center items-center gap-[24px] text-black text-[24px] font-[500] leading-[36px] mt-[20px]"
           >
             <span
-              className="min-w-[122px] px-[12px] py-[4px] min-h-[36px] text-center rounded-3xl"
+              className="min-w-[122px] px-[24px] py-[4px] min-h-[36px] text-center rounded-3xl"
               style={{
                 background: "linear-gradient(90deg, #52FEFF 0%, #00FEFF 100%)",
               }}
@@ -71,7 +71,7 @@ const Pc = () => {
               Discover
             </span>
             <span
-              className="min-w-[102px] min-h-[36px] px-[12px] py-[4px] text-center rounded-3xl"
+              className="min-w-[102px] min-h-[36px] px-[24px] py-[4px] text-center rounded-3xl"
               style={{
                 background:
                   " linear-gradient(270deg, #BAFE74 0%, #D4FFA8 100%)",
@@ -81,7 +81,7 @@ const Pc = () => {
             </span>
             <span className="min-w-[48px] min-h-[36px] text-center ">And</span>
             <span
-              className="min-w-[115px] min-h-[36px] px-[12px] py-[4px] text-center rounded-3xl"
+              className="min-w-[115px] min-h-[36px] px-[24px] py-[4px] text-center rounded-3xl"
               style={{
                 background:
                   "  linear-gradient(90deg, #FFDBF5 0%, #FFC3EE 100%)",
@@ -160,8 +160,12 @@ const Pc = () => {
             slidesPerView={3}
             centeredSlides={true}
             spaceBetween={-30}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             // freeMode={true}
-            // modules={[FreeMode]}
+            modules={[Autoplay]}
             loop
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}

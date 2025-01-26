@@ -60,7 +60,7 @@ const Planet = () => {
         background:
           "linear-gradient(360deg, #FFC6FF -48.81%, #F5CBFF 0.6%, #EAD3FF 40.12%, #82E1FE 103.36%, #3DAEF0 148.81%)",
       }}
-      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[820px]"
+      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[820px] z-10"
     >
       <img
         src="/planet/title.png"
@@ -71,14 +71,14 @@ const Planet = () => {
       <div className="flex flex-col justify-center items-center pt-[70px] text-black">
         <span className="font-[800] text50  ">The Latest on Heyo Planet</span>
         <motion.div
-          className="w-full h-[370px] overflow-x-hidden overflow-y-auto my-[60px] flex flex-col items-center"
+          className="w-full h-[390px] overflow-x-hidden overflow-y-auto my-[60px] flex flex-col items-center"
           ref={ref}
           initial={false}
           animate={inViewport ? "open" : "closed"}
           variants={navVariants}
         >
           <Swiper
-            className="w-[1300px] !h-[370px] overflow-hidden"
+            className="w-[1300px] !h-[390px] overflow-hidden"
             slidesPerView={3}
             // centeredSlides={false}
             // spaceBetween={30}
@@ -115,7 +115,7 @@ const ItemView = ({ item }: { item: New }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="w-[376px] h-[368px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
+      className="w-[376px] h-[388px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
     >
       <img
         src={item.img_url || "/image-planet.png"}

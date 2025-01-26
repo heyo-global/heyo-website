@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <section
       id="EXPERIENCE"
-      className="relative flex justify-center items-center flex-col w-full"
+      className="relative flex justify-center items-center flex-col w-full z-10"
     >
       <motion.div
         ref={ref}
