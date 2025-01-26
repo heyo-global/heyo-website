@@ -164,22 +164,22 @@ const Pc = () => {
               delay: 3000,
               disableOnInteraction: false,
             }}
-            // freeMode={true}
-            modules={[Autoplay]}
+            freeMode={true}
+            modules={[Autoplay,FreeMode]}
             loop
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <SwiperSlide>
+            <SwiperSlide className="w-[788px] h-[534px]">
               <img src="/home/banner1.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="w-[788px] h-[534px]">
               <img src="/home/banner2.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="w-[788px] h-[534px]">
               <img src="/home/banner3.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="w-[788px] h-[534px]">
               <img src="/home/banner4.png" className="swiper-slide-zoom w-[788px] h-[534px]" />
             </SwiperSlide>
           </Swiper>

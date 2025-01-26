@@ -64,12 +64,12 @@ const Planet = () => {
     >
       <img
         src="/planet/title.png"
-        className="w-[1300px] h-[108px] absolute top-[120px] left-1/2 -ml-[650px] img-disabled"
+        className="w-[1300px] h-[108px] absolute top-[120px] left-1/2 -ml-[650px] img-disabled z-0"
         alt=""
       />
 
-      <div className="flex flex-col justify-center items-center text-black ">
-        <span className="font-[800] text50 mt-[110px] fontPP">The Latest on Heyo Planet</span>
+      <div className="flex flex-col justify-center items-center text-black z-10">
+        <span className="font-[800] text50 mt-[130px] fontPP">The Latest on Heyo Planet</span>
         <motion.div
           className="w-full h-[390px] overflow-x-hidden overflow-y-auto my-[60px] flex flex-col items-center"
           ref={ref}

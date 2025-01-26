@@ -340,6 +340,8 @@ html {
   height: 267px !important; */
 }
  .swiper-slide-active, .swiper-slide-duplicate-active {
+  /* width: 788px !important;
+    height: 534px !important; */
   .swiper-slide-zoom{
 
     transform: scaleY(1) !important; 
