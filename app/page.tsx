@@ -11,8 +11,18 @@ import Lifestyle from "@/components/home/Lifestyle";
 import Era from "@/components/home/Era";
 import Beyond from "@/components/home/Beyond";
 import Footer from "@/components/home/Footer";
+import App from "@/mobile/App";
 
-export default function Home() {
+export default function Page() {
+  const {  isMobile } = useWindowSize();
+
+  return <>
+  {isMobile ? <App /> : <Home />}
+  </>
+}
+
+
+const Home = () => {
   const { height } = useWindowSize();
   const ref = useRef(null);
   const scroll = useScroll(ref);
@@ -48,3 +58,5 @@ export default function Home() {
     </div>
   );
 }
+
+
