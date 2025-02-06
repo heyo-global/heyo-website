@@ -4,7 +4,7 @@ const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
     width: 0,
     height: 0,
-    isMobile: true,
+    isMobile: false,
   });
 
   useEffect(() => {

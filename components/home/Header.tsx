@@ -45,7 +45,7 @@ const Header = () => {
           />
         </div>
         <div className="flex-grow hidden md:flex justify-center items-center ">
-          <div className="flex justify-center items-center px-[12px] rounded-[10px] bg-white/20 border border-whiter h-[32px] leading-[32px]">
+          <div className="flex justify-center items-center px-[12px] rounded-[10px] bg-white/85 border border-whiter h-[32px] leading-[32px]">
             {menus.map((item: any) => (
               <motion.a
                 whileHover={{ scale: 1.1 }}
