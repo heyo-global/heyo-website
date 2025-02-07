@@ -23,6 +23,7 @@
     "swiper": "^11.2.1"
   },
   "devDependencies": {
+    "@next/third-parties": "^14.2.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
