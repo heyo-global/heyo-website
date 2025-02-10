@@ -39,7 +39,7 @@ const AppDialog = ({ show, setShow }: any) => {
               onClick={() => setShow(false)}
             >
               <svg
-                className="w-[28px] h-[28px] group-hover:scale-125"
+                className="w-[3.7vw] h-[3.7vw] group-hover:scale-125"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
@@ -104,7 +104,7 @@ const AppDialog = ({ show, setShow }: any) => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="w-[63.5vw] h-[38px] md:w-[11.4vw] md:h-[1.98vw] flex justify-center items-center rounded-[40px]
+              className="w-[63.5vw] h-[38px] md:w-[11.4vw] md:h-[1.98vw] flex justify-center items-center rounded-[5.55vw]
          gap-[12px] md:gap-[0.6vw] cursor-pointer border border-[#ADADAD]"
               onClick={handleClickToPc}
             >

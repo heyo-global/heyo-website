@@ -88,8 +88,8 @@ const Mobile = () => {
       <div id="outer" className="body" ref={ref}>
         <MobileIntro />
         <section id="ai" className="w-full relative pt-[90px]">
-          <img src="/experience/bg-bottom-left.png" className=" absolute left-[0px] top-[1300px] w-[1798px] h-[2547px]"/>
-          <img src="/experience/bg-right1.png" className=" absolute left-[1237px] top-[250px] w-[1083px] h-[2301px]"/>
+          <img src="/experience/bg-bottom-left.png" className=" absolute left-[0px] top-[100px] w-[1798px] h-[2547px]"/>
+          <img src="/experience/bg-right1.png" className=" absolute right-[0px] top-[20px] w-[1083px] h-[2301px]"/>
           <MobileExperience />
           <MobileEra />
           <MobileLifestyle />

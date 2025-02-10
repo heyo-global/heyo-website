@@ -22,18 +22,18 @@ const Experience = () => {
         animate={{ opacity: inViewport ? 1 : 0 }}
         className="relative flex flex-col items-center justify-center w-[92%] z-10"
       >
-        <div className="text-[32px] font-[800] mt-[32px] flex flex-col items-center justify-center z-[100] text-black fontPP">
+        <div className="text-[4.3vw] font-[800] mt-[4.3vw] flex flex-col items-center justify-center z-[100] text-black fontPP">
           <span>Beyond Crypto</span>
         </div>
-        <div className="flex flex-col justify-center items-center text-black w-[88%] pt-[20px] mb-[40px] ">
-          <div className="flex flex-col items-center justify-center w-[570px] gap-[30px] text-[24px] leading-[42px]">
+        <div className="flex flex-col justify-center items-center text-black w-[88%] pt-[2.67vw] mb-[5.55vw] ">
+          <div className="flex flex-col items-center justify-center w-[76vw] gap-[4vw] text-[3.2vw] leading-[5.6vw]">
             <span className=" font-[500]">
               The landmarks in Heyo are closely integrated with real-world
               business scenarios, creating a seamless connection between Web2
               and Web3 experiences.
             </span>
           </div>
-          <RiveComponent className="w-[710px] h-[410px] z-10 mt-[20px]" />
+          <RiveComponent className="w-[95vw] h-[55vw] z-10 mt-[2.67vw]" />
         </div>
       </motion.div>
     </section>

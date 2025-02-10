@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useInViewport, useLocalStorageState } from "ahooks";
-import { useNews } from "@/hooks/useApi";
-import useWindowSize from "@/hooks/useWindowSize"; 
+import { useNews } from "@/hooks/useApi"; 
 import { motion } from "framer-motion"; 
 import { useRive } from "@rive-app/react-canvas";
 
@@ -53,23 +52,23 @@ const Planet = () => {
       //   background:
       //     "linear-gradient(bottom,  #F5CBFF 0%, #EAD3FF 40.12%, #82E1FE 103.36%)",
       // }}
-      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[2600px] z-10"
+      className=" overflow-hidden relative flex justify-center items-center flex-col w-full h-[347vw] z-10"
     >
       <img
         src="/planet/title.png"
-        className="w-[650px] h-[54px] absolute top-[70px] left-1/2 -ml-[325px] img-disabled z-0"
+        className="w-[86vw] h-[7.2vw] absolute top-[9vw] left-1/2 -ml-[43vw] img-disabled z-0"
         alt=""
       />
 
       <div className="flex flex-col justify-center items-center text-black z-10">
-        <span className="font-[800] text-[36px] leading-[54px] mt-[300px] fontPP">
+        <span className="font-[800] text-[4.8vw] leading-[7.2vw] mt-[40vw] fontPP">
           The Latest on 
         </span>
-        <span className="font-[800] text-[36px] leading-[54px] fontPP">
+        <span className="font-[800] text-[4.8vw] leading-[7.2vw] fontPP">
           Heyo Planet
         </span>
         <motion.div
-          className="w-full h-[2460px] overflow-x-hidden my-[60px] flex flex-col items-center gap-[20px] pb-[20px]"
+          className="w-full h-[328vw] overflow-x-hidden my-[8vw] flex flex-col items-center gap-[2.67vw] pb-[2.67vw]"
           ref={ref}
           initial={false}
           animate={inViewport ? "open" : "closed"}
@@ -101,23 +100,23 @@ const ItemView = ({ item }: { item: New }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="w-[670px] h-[548px] group flex flex-col items-center gap-4 text-black border border-white rounded-[20px] bg-white/20"
+      className="w-[89.3vw] h-[73vw] group flex flex-col items-center gap-4 text-black border border-white rounded-[2.67vw] bg-white/20"
     >
       <img
         src={item.img_url || "/image-planet.png"}
-        className="w-full h-[320px] rounded-t-[20px]"
+        className="w-full h-[42.7vw] rounded-t-[2.67vw]"
       />
-      <span className="font-[500] text-[24px]  leading-[24px] textTwo w-[600px]">
+      <span className="font-[500] text-[3.2vw]  leading-[3.2vw] textTwo w-[80vw]">
         {item.title}
       </span>
-      <img src={"/planet/image-x.png"} className="w-[94px] h-[48px]" />
+      <img src={"/planet/image-x.png"} className="w-[12.5vw] h-[6.4vw]" />
       <div
         onClick={() => {
           window.open(item.jump_url, "_blank");
         }}
-        className="w-[610px] h-[54px] cursor-pointer flex justify-center items-center gap-2 bg-white rounded group-hover:scale-110 hover:bg-white/70"
+        className="w-[81vw] h-[7.2vw] cursor-pointer flex justify-center items-center gap-2 bg-white rounded group-hover:scale-110 hover:bg-white/70"
       >
-        <span className="font-[500] text-[28px]">View Content</span>
+        <span className="font-[500] text-[3.7vw]">View Content</span>
         <img src="/planet/icon-view.svg" className="w-[10px] h-10px]" />
       </div>
     </motion.div>
@@ -135,26 +134,26 @@ const Share = () => {
   return (
     <section
       id="Share" 
-      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[600px] mt-[0px]"
+      className=" overflow-hidden relative flex flex-col justify-center items-center w-full h-[80vw] mt-[0px]"
     >
       <img
         src="/planet/share-title.png"
-        className="w-[640px] h-[54px] absolute top-[30px] left-1/2 -ml-[320px] img-disabled z-10"
+        className="w-[85vw] h-[7.2vw] absolute top-[4vw] left-1/2 -ml-[42.5vw] img-disabled z-10"
         alt=""
       />
 
       <div className="flex flex-col justify-center items-center text-black fontPP">
-        <span className="font-[800] text-[36px] leading-[54px]">
+        <span className="font-[800] text-[4.8vw] leading-[7.2vw]">
           Ready To Create Your
         </span>
-        <span ref={ref} className="font-[800] text-[36px] leading-[54px]">
+        <span ref={ref} className="font-[800] text-[4.8vw] leading-[7.2vw]">
           Own Landmarks 
         </span>
-        <span className="font-[800] text-[36px] leading-[54px]">
+        <span className="font-[800] text-[4.8vw] leading-[7.2vw]">
           With Heyo?
         </span>
         <motion.div
-          className="w-full h-[100px] flex flex-col items-center my-[50px]"
+          className="w-full h-[13.33vw] flex flex-col items-center my-[6.7vw]"
           initial={{ opacity: 0 }}
           animate={{ opacity: inViewport ? 1 : 0 }}
         >
@@ -162,7 +161,7 @@ const Share = () => {
         </motion.div>
       </div>
 
-      <div className="flex items-center justify-between w-full z-10 text-[#FF6ADA] font-[500] text-[24px] px-[24px]">
+      <div className="flex items-center justify-between w-full z-10 text-[#FF6ADA] font-[500] text-[3.2vw] px-[3.2vw]">
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
@@ -173,12 +172,12 @@ const Share = () => {
               "_blank"
             )
           }
-          className="w-[320px] h-[80px] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
         >
           <img
             src="/planet/icon-docs.svg"
             alt=""
-            className="w-[24px] h-[24px] "
+            className="w-[3.2vw] h-[3.2vw] "
           />
           <span>Heyo docs</span>
         </motion.div>
@@ -190,12 +189,12 @@ const Share = () => {
             // window.open("https://t.me/heyoplanetofficial", "_blank")
             window.open("https://app.heyoplanet.com", "_blank")
           }
-          className="w-[320px] h-[80px] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
         >
           <img
             src="/planet/icon-website.svg"
             alt=""
-            className="w-[24px] h-[24px] "
+            className="w-[3.2vw] h-[3.2vw] "
           />
           <span>heyoplanet.com</span>
         </motion.div>
