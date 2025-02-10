@@ -6,7 +6,7 @@ const Footer = () => {
       id="footer"
       className="w-full flex flex-col justify-center items-center"
     >
-      <div className="flex w-[540px] h-full text-black font-[500] text-[3.2vw]">
+      <div className="flex w-[72vw] h-full text-black font-[500] text-[3.2vw]">
         <div className="flex flex-col gap-3 flex-1">
           <span className="text-[3.7vw]">RESOURCES</span>
           <span>DOCS</span>

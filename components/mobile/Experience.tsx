@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <section
       id="Experience"
-      className="relative flex justify-center items-center flex-col w-full z-10"
+      className="relative flex justify-center items-center flex-col w-full z-10 "
     >
       <img
           src="/mobile/bg-real.png"
@@ -26,7 +26,7 @@ const Experience = () => {
 
       <img
           src="/mobile/experience.png"
-          className="w-full h-[10.4vw] absolute top-[0px] -left-[0px]  z-[10] img-disabled"
+          className="w-full h-[10.4vw] absolute top-[4vw] -left-[0px]  z-[10] img-disabled"
           alt=""
         />
 
@@ -34,7 +34,7 @@ const Experience = () => {
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{ opacity: inViewport ? 1 : 0 }}
-        className="relative flex flex-col items-center justify-center -mt-[4vw] w-[92%]"
+        className="relative flex flex-col items-center justify-center -mt-[0vw] w-[92%]"
       > 
         <div className="text-[4.8vw] leading-[7.2vw] font-[800] w-full mt-[8.3vw] flex flex-col items-center justify-center z-[100] text-black fontPP">
           <span>AI-Powered Digital Twin</span>

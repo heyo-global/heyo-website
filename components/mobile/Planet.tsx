@@ -157,7 +157,7 @@ const Share = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: inViewport ? 1 : 0 }}
         >
-          <RiveComponent className="w-[600px] h-[96px]" />
+          <RiveComponent className="w-[80vw] h-[12.8vw]" />
         </motion.div>
       </div>
 

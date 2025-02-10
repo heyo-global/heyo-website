@@ -132,10 +132,10 @@ const Intro = () => {
         </div>
 
         <div className="flex flex-col items-center w-full relative mt-[2.67vw]">
-          <RiveComponent className="w-[1200px] h-[1000px]" />
+          <RiveComponent className="w-[1000PX] h-[833PX]" />
         </div>
 
-        <div className="flex flex-col w-full items-center -mt-[42.7vw] z-10">
+        <div className="flex flex-col w-full items-center -mt-[35vw] z-10">
           <span className="font-[800] text-[4.8vw] w-[80%] text-black leading-[7.2vw] fontPP text-center">
             Getting started your Heyo travel
           </span>
@@ -151,7 +151,7 @@ const Intro = () => {
           <div className=" w-screen overflow-hidden flex flex-col items-center">
             <img src="/home/banner1.png" className="w-[89.3vw] h-[57.87vw]" />
 
-            <div className="flex flex-col items-center w-[600px] text-black ">
+            <div className="flex flex-col items-center w-[80vw] text-black ">
               <span className="font-[800] text-[3.2vw] fontPP">
                 Explore Landmarks
               </span>
@@ -162,7 +162,7 @@ const Intro = () => {
               </span>
             </div>
             <img src="/home/banner2.png" className="w-[89.3vw] h-[57.87vw] " />
-            <div className="flex flex-col items-center w-[600px] text-black ">
+            <div className="flex flex-col items-center w-[80vw] text-black ">
               <span className="font-[800] text-[3.2vw] fontPP">
                 Explore Landmarks
               </span>
@@ -173,7 +173,7 @@ const Intro = () => {
               </span>
             </div>
             <img src="/home/banner3.png" className="w-[89.3vw] h-[57.87vw]" />
-            <div className="flex flex-col items-center w-[600px] text-black ">
+            <div className="flex flex-col items-center w-[80vw] text-black ">
               <span className="font-[800] text-[3.2vw] fontPP">
                 Explore Landmarks
               </span>
@@ -184,7 +184,7 @@ const Intro = () => {
               </span>
             </div>
             <img src="/home/banner4.png" className="w-[89.3vw] h-[57.87vw]" />
-            <div className="flex flex-col items-center w-[600px] text-black ">
+            <div className="flex flex-col items-center w-[80vw] text-black ">
               <span className="font-[800] text-[3.2vw] fontPP">
                 Explore Landmarks
               </span>
