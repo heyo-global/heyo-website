@@ -172,7 +172,7 @@ const Share = () => {
               "_blank"
             )
           }
-          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8PX] border border-[#FF6ADA] rounded-[14PX]"
         >
           <img
             src="/planet/icon-docs.svg"
@@ -189,7 +189,7 @@ const Share = () => {
             // window.open("https://t.me/heyoplanetofficial", "_blank")
             window.open("https://app.heyoplanet.com", "_blank")
           }
-          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8px] border border-[#FF6ADA] rounded-[14px]"
+          className="w-[42.7vw] h-[10.67vw] bg-[#FF6ADA1A] cursor-pointer flex justify-center items-center gap-[8PX] border border-[#FF6ADA] rounded-[14PX]"
         >
           <img
             src="/planet/icon-website.svg"

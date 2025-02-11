@@ -1,6 +1,10 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useCallback } from "react";
 
 const Footer = () => {
+  const handleClick = useCallback((url:string) => {
+    window.open(url,"_blank");
+  },[])
   return (
     <section
       id="footer"
@@ -22,9 +26,27 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-[2.67vw] my-[6.7vw]">
-        <img src="/mobile/icon-idcard.svg" className="w-[10.67vw] h-[10.67vw]" />
-        <img src="/mobile/icon-t.svg" className="w-[10.67vw] h-[10.67vw]" />
-        <img src="/mobile/icon-x.svg" className="w-[10.67vw] h-[10.67vw]" />
+        {/* <motion.img
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          src="/mobile/icon-idcard.svg"
+          className="w-[10.67vw] h-[10.67vw]"
+          onClick={() => handleClick("")}
+        /> */}
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          src="/mobile/icon-t.svg"
+          className="w-[10.67vw] h-[10.67vw]"
+          onClick={() => handleClick("https://t.me/heyoplanetofficial")}
+        />
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          src="/mobile/icon-x.svg"
+          className="w-[10.67vw] h-[10.67vw]"
+          onClick={() => handleClick("https://x.com/HeyoPlanet")}
+        />
       </div>
 
       <img
