@@ -28,18 +28,18 @@ const AppDialog = ({ show, setShow }: any) => {
       closeOnMaskClick={true}
       bodyStyle={{
         backgroundColor: "transparent",
-        width: isMobile ? "306px" : "16vw",
-        height: isMobile ? "518px" : "27vw",
+        width: isMobile ? "81.3vw" : "16vw",
+        height: isMobile ? "138vw" : "27vw",
         overflow: "hidden", 
       }}
       title={
         <div className=" text-black flex justify-center w-full relative "> 
            <div
-              className="top-[16px] right-[8px] md:top-[1vw] md:right-[0.5vw] z-[200] absolute cursor-pointer flex justify-center items-center group"
+              className="top-[4vw] right-[2vw] md:top-[1vw] md:right-[0.5vw] z-[200] absolute cursor-pointer flex justify-center items-center group"
               onClick={() => setShow(false)}
             >
               <svg
-                className="w-[3.7vw] h-[3.7vw] group-hover:scale-125"
+                className="w-[8vw] h-[8vw] group-hover:scale-125"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
@@ -73,7 +73,7 @@ const AppDialog = ({ show, setShow }: any) => {
         <div className="text-[#535145] relative bg-[url(/image-app-bg.svg)] bg-contain bg-no-repeat w-full h-full flex flex-col justify-center items-center ">
           {/* <img src="/image-app-bg.svg" className="md:w-[306px] md:h-[518px] img-disabled absolute" /> */}
 
-          <div className="flex flex-col justify-center items-center w-full h-[70%] font-[800] md:text-[0.94vw] md:leading-[1.1vw]">
+          <div className="flex flex-col justify-center items-center text-[3.7vw] w-full h-[70%] font-[800] md:text-[0.94vw] md:leading-[1.1vw]">
             <span>Visit us on</span>
             <span>Telegram Mini-app</span>
 
@@ -85,7 +85,7 @@ const AppDialog = ({ show, setShow }: any) => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="w-[53vw] h-[38px] md:w-[10.42vw] md:h-[1.48vw] flex justify-center items-center gap-[6px] cursor-pointer "
+              className="w-[53vw] h-[10vw] md:w-[10.42vw] md:h-[1.48vw] flex justify-center items-center gap-[6PX] cursor-pointer "
               onClick={handleClickToMobile}
             >
               <span className="custom-app-underline text-[3.7vw] md:text-[0.73vw] font-[800]">
@@ -93,29 +93,30 @@ const AppDialog = ({ show, setShow }: any) => {
               </span>
               <img
                 src="/icon-right-black.svg"
-                className="w-[9px] h-[10px] md:w-[9px] md:h-[10px] img-disabled"
+                className="w-[2.4vw] h-[2.6vw] md:w-[9px] md:h-[10px] img-disabled"
               />
             </motion.div>
           </div>
 
-          <div className="flex flex-col justify-center items-center w-full h-[30%] gap-[6px] font-[800]  md:text-[0.94vw] md:leading-[1.1vw]">
+          <div className="flex flex-col justify-center items-center text-[3.7vw] w-full h-[30%] gap-[6PX] font-[800]  md:text-[0.94vw] md:leading-[1.1vw]">
             <span>on Web Version</span>
 
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="w-[63.5vw] h-[38px] md:w-[11.4vw] md:h-[1.98vw] flex justify-center items-center rounded-[5.55vw]
+              className="w-[63.5vw] h-[10vw] md:w-[11.4vw] md:h-[1.98vw] flex justify-center items-center rounded-[5.55vw]
          gap-[12px] md:gap-[0.6vw] cursor-pointer border border-[#ADADAD]"
               onClick={handleClickToPc}
             >
               <img
                 src="/icon-pc.svg"
-                className="w-[17px] h-[14px] md:w-[1vw] md:h-[0.83vw] img-disabled"
+                className="w-[4.5vw] h-[3.7vw] md:w-[1vw] md:h-[0.83vw] img-disabled"
               />
               <span className="custom-underline  text-[3.7vw] md:text-[0.73vw] font-[500]">
                 app.heyoplanet.com
               </span>
               <svg
+                className="w-[3.2vw] h-[3.2vw]"
                 width="12"
                 height="12"
                 viewBox="0 0 12 12"
@@ -129,7 +130,7 @@ const AppDialog = ({ show, setShow }: any) => {
               </svg>
             </motion.div>
 
-            <span className="text-[10px] font-[500]">
+            <span className="text-[2.7vw] font-[500]">
               For mobile and desktop
             </span>
           </div>

@@ -55,7 +55,7 @@ const Intro = () => {
             className="flex justify-center items-center text-[3.7vw] gap-[3.2vw] text-black font-[500] mt-[6.7vw]"
           >
             <span
-              className="min-w-[19vw] px-[3.2vw] py-[4px] min-h-[4vw] text-center rounded-3xl"
+              className="min-w-[19vw] px-[3.2vw] py-[0.5vw] min-h-[4vw] text-center rounded-3xl"
               style={{
                 background: "linear-gradient(90deg, #52FEFF 0%, #00FEFF 100%)",
               }}
@@ -63,7 +63,7 @@ const Intro = () => {
               Discover
             </span>
             <span
-              className="min-w-[16vw] min-h-[4vw] px-[3.2vw] py-[4px] text-center rounded-3xl"
+              className="min-w-[16vw] min-h-[4vw] px-[3.2vw] py-[0.5vw] text-center rounded-3xl"
               style={{
                 background:
                   " linear-gradient(270deg, #BAFE74 0%, #D4FFA8 100%)",
@@ -73,7 +73,7 @@ const Intro = () => {
             </span>
             <span className="min-w-[8vw] min-h-[4vw] text-center ">And</span>
             <span
-              className="min-w-[18vw] min-h-[4vw] px-[3.2vw] py-[4px] text-center rounded-3xl"
+              className="min-w-[18vw] min-h-[4vw] px-[3.2vw] py-[0.5vw] text-center rounded-3xl"
               style={{
                 background:
                   "  linear-gradient(90deg, #FFDBF5 0%, #FFC3EE 100%)",
