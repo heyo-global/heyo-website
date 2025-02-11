@@ -4,6 +4,19 @@ import { useInViewport } from "ahooks";
 import { useRive } from "@rive-app/react-canvas";
 import { useStatistics } from "@/hooks/useApi";
 import CountUp from "react-countup";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+// import "swiper/css/effect-coverflow";
+import 'swiper/css/pagination';
+import {
+  FreeMode,
+  Pagination,
+  Scrollbar,
+  EffectCoverflow,
+  Autoplay,
+} from "swiper/modules";
 
 const Intro = () => {
   const ref = useRef(null);
@@ -30,7 +43,7 @@ const Intro = () => {
       id="Related"
       className="relative w-full flex flex-col items-center overflow-hidden text-black"
     >
-      <div className="relative w-full h-[502vw] flex flex-col items-center overflow-hidden text-black  bg-no-repeat bg-cover">
+      <div className="relative w-full h-[262vw] flex flex-col items-center overflow-hidden text-black  bg-no-repeat bg-cover">
         <img
           src="/mobile/bg.png"
           className="w-full h-[183vw] absolute top-0 left-0 z-0"
@@ -52,10 +65,10 @@ const Intro = () => {
 
           <div
             // style={{ fontSize: "28PX" }}
-            className="flex justify-center items-center text-[3.7vw] gap-[3.2vw] text-black font-[500] mt-[6.7vw]"
+            className="flex justify-center items-center text-[3.7vw] leading-[4.8vw] gap-[3.2vw] text-black font-[500] mt-[6.7vw]"
           >
             <span
-              className="min-w-[19vw] px-[3.2vw] py-[0.5vw] min-h-[4vw] text-center rounded-3xl"
+              className="min-w-[19vw] px-[3.2vw] py-[1.2vw] min-h-[4vw] text-center rounded-3xl"
               style={{
                 background: "linear-gradient(90deg, #52FEFF 0%, #00FEFF 100%)",
               }}
@@ -63,7 +76,7 @@ const Intro = () => {
               Discover
             </span>
             <span
-              className="min-w-[16vw] min-h-[4vw] px-[3.2vw] py-[0.5vw] text-center rounded-3xl"
+              className="min-w-[16vw] min-h-[4vw] px-[3.2vw] py-[1.2vw] text-center rounded-3xl"
               style={{
                 background:
                   " linear-gradient(270deg, #BAFE74 0%, #D4FFA8 100%)",
@@ -73,7 +86,7 @@ const Intro = () => {
             </span>
             <span className="min-w-[8vw] min-h-[4vw] text-center ">And</span>
             <span
-              className="min-w-[18vw] min-h-[4vw] px-[3.2vw] py-[0.5vw] text-center rounded-3xl"
+              className="min-w-[18vw] min-h-[4vw] px-[3.2vw] py-[1.2vw] text-center rounded-3xl"
               style={{
                 background:
                   "  linear-gradient(90deg, #FFDBF5 0%, #FFC3EE 100%)",
@@ -146,44 +159,48 @@ const Intro = () => {
               className="w-[44PX] h-[3.2vw]"
             />{" "}
             <span>I want be mayor</span>
-          </div>            
+          </div>
 
           <div className=" w-screen overflow-hidden flex flex-col items-center">
-            <img src="/home/banner1.png" className="w-[89.3vw] h-[57.87vw]" />
+            <Swiper
+              className=" w-[89.3vw] h-[57.87vw] overflow-hidden"
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              freeMode={true}
+              pagination={true}
+              modules={[Autoplay, FreeMode,Pagination]}
+              loop
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide className="[89.3vw] h-[57.87vw]">
+                <img
+                  src="/home/banner1.png"
+                  className="w-[89.3vw] h-[57.87vw]"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="[89.3vw] h-[57.87vw]">
+                <img
+                  src="/home/banner2.png"
+                  className="w-[89.3vw] h-[57.87vw]"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="[89.3vw] h-[57.87vw]">
+                <img
+                  src="/home/banner3.png"
+                  className="w-[89.3vw] h-[57.87vw]"
+                />
+              </SwiperSlide>
+              <SwiperSlide className="[89.3vw] h-[57.87vw]">
+                <img
+                  src="/home/banner4.png"
+                  className="w-[89.3vw] h-[57.87vw]"
+                />
+              </SwiperSlide>
+            </Swiper>
 
-            <div className="flex flex-col items-center w-[80vw] text-black ">
-              <span className="font-[800] text-[3.2vw] fontPP">
-                Explore Landmarks
-              </span>
-              <span className="font-[500] text-[3.2vw] leading-[4.8vw] text-center">
-                Heyo display nearby landmarks based on your current location,
-                helping you explore and discover fascinating landmarks around
-                you.
-              </span>
-            </div>
-            <img src="/home/banner2.png" className="w-[89.3vw] h-[57.87vw] " />
-            <div className="flex flex-col items-center w-[80vw] text-black ">
-              <span className="font-[800] text-[3.2vw] fontPP">
-                Explore Landmarks
-              </span>
-              <span className="font-[500] text-[3.2vw] leading-[4.8vw] text-center">
-                Heyo display nearby landmarks based on your current location,
-                helping you explore and discover fascinating landmarks around
-                you.
-              </span>
-            </div>
-            <img src="/home/banner3.png" className="w-[89.3vw] h-[57.87vw]" />
-            <div className="flex flex-col items-center w-[80vw] text-black ">
-              <span className="font-[800] text-[3.2vw] fontPP">
-                Explore Landmarks
-              </span>
-              <span className="font-[500] text-[3.2vw] leading-[4.8vw] text-center">
-                Heyo display nearby landmarks based on your current location,
-                helping you explore and discover fascinating landmarks around
-                you.
-              </span>
-            </div>
-            <img src="/home/banner4.png" className="w-[89.3vw] h-[57.87vw]" />
             <div className="flex flex-col items-center w-[80vw] text-black ">
               <span className="font-[800] text-[3.2vw] fontPP">
                 Explore Landmarks

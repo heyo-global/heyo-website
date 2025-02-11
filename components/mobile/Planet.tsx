@@ -109,7 +109,9 @@ const ItemView = ({ item }: { item: New }) => {
       <span className="font-[500] text-[3.2vw]  leading-[3.2vw] textTwo w-[80vw]">
         {item.title}
       </span>
-      <img src={"/planet/image-x.png"} className="w-[12.5vw] h-[6.4vw]" />
+      <img src={"/planet/image-x.png"} className="w-[12.5vw] h-[6.4vw]" onClick={() => {
+          window.open(item.jump_url, "_blank");
+        }}/>
       <div
         onClick={() => {
           window.open(item.jump_url, "_blank");
