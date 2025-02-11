@@ -100,13 +100,13 @@ const ItemView = ({ item }: { item: New }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="w-[89.3vw] h-[73vw] group flex flex-col items-center gap-4 text-black border border-white rounded-[2.67vw] bg-white/20"
+      className="w-[89.3vw] h-[73vw] group flex flex-col items-center gap-[2vw] text-black border border-white rounded-[2.67vw] bg-white/20"
     >
       <img
         src={item.img_url || "/image-planet.png"}
-        className="w-full h-[42.7vw] rounded-t-[2.67vw]"
+        className="w-full h-[42vw] rounded-t-[2.67vw]"
       />
-      <span className="font-[500] text-[3.2vw]  leading-[3.2vw] textTwo w-[80vw]">
+      <span className="font-[500] text-[3.2vw] leading-[3.5vw] textTwo w-[80vw] h-[7vw]">
         {item.title}
       </span>
       <img src={"/planet/image-x.png"} className="w-[12.5vw] h-[6.4vw]" onClick={() => {
@@ -116,10 +116,10 @@ const ItemView = ({ item }: { item: New }) => {
         onClick={() => {
           window.open(item.jump_url, "_blank");
         }}
-        className="w-[81vw] h-[7.2vw] cursor-pointer flex justify-center items-center gap-2 bg-white rounded group-hover:scale-110 hover:bg-white/70"
+        className="w-[80vw] h-[7.2vw] cursor-pointer flex justify-center items-center gap-2 bg-white rounded group-hover:scale-110 hover:bg-white/70"
       >
         <span className="font-[500] text-[3.7vw]">View Content</span>
-        <img src="/planet/icon-view.svg" className="w-[10px] h-10px]" />
+        <img src="/planet/icon-view.svg" className="w-[2vw] h-[2vw]" />
       </div>
     </motion.div>
   );

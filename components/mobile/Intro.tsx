@@ -52,14 +52,14 @@ const Intro = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={{ opacity: inViewport ? 1 : 0 }}
-          style={{ fontSize: "60PX", lineHeight: "82PX" }}
+          style={{ fontSize: "8vw", lineHeight: "11vw" }}
           className="font-[800] flex flex-col items-center justify-center mt-[17vw] z-10"
         >
-          <span className="fontPP" style={{ fontSize: "48PX" }}>
+          <span className="fontPP" style={{ fontSize: "6.4vw" }}>
             The World's
           </span>
           <span className="fontPP">First Web3 LBS</span>
-          <span className="fontPP" style={{ fontSize: "48PX" }}>
+          <span className="fontPP" style={{ fontSize: "6.4vw" }}>
             Lifestyle App
           </span>
 
@@ -100,14 +100,14 @@ const Intro = () => {
           </span>
         </motion.div>
 
-        <div className="w-[85vw] h-[15vw] mt-[9vw] flex justify-between items-center z-10">
+        <div className="w-[85vw] h-[17vw] mt-[9vw] flex justify-between items-center z-10">
           {inViewport && (
             <div
-              className="flex flex-col justify-center items-center min-w-[37vw] min-h-[13.33vw] py-[12px] px-[4.3vw] bg-white/20 rounded-[2.67vw] border border-[#ffffff]"
+              className="flex flex-col justify-center items-center min-w-[37vw] min-h-[16.33vw] py-[12px] px-[4.3vw] bg-white/20 rounded-[2.67vw] border border-[#ffffff]"
               style={{ backdropFilter: "blur(2px)" }}
             >
               <span
-                className="font-[600] text20 text-[#FF6ADA]"
+                className="font-[600] text-[2.6vw] text-[#FF6ADA]"
                 style={{ textShadow: "0px 0px 4px 0px #FF6ADA45" }}
               >
                 Covered cities
@@ -116,7 +116,7 @@ const Intro = () => {
                 start={0}
                 end={(data && data.city_num) || 0}
                 separator=","
-                className="font-[600] text36 text-[#FF6ADA] "
+                className="font-[600] text-[4.8vw] text-[#FF6ADA] "
                 style={{ textShadow: "0px 0px 6px 0px #FF6ADA45" }}
               />
             </div>
@@ -124,11 +124,11 @@ const Intro = () => {
 
           {inViewport && (
             <div
-              className="flex flex-col justify-center items-center min-w-[37vw] min-h-[13.33vw] py-[12px] px-[4.3vw] bg-white/20 rounded-[2.67vw] border border-[#ffffff]"
+              className="flex flex-col justify-center items-center min-w-[37vw] min-h-[16.33vw] py-[12px] px-[4.3vw] bg-white/20 rounded-[2.67vw] border border-[#ffffff]"
               style={{ backdropFilter: "blur(2px)" }}
             >
               <span
-                className="font-[600] text20 text-[#FF6ADA]"
+                className="font-[600] text-[2.6vw] text-[#FF6ADA]"
                 style={{ textShadow: "0px 0px 4px 0px #FF6ADA45" }}
               >
                 Real created landmarks
@@ -137,7 +137,7 @@ const Intro = () => {
                 start={0}
                 end={(data && data.point_num) || 0}
                 separator=","
-                className="font-[600] text36 text-[#FF6ADA] "
+                className="font-[600] text-[4.8vw] text-[#FF6ADA] "
                 style={{ textShadow: "0px 0px 6px 0px #FF6ADA45" }}
               />
             </div>
@@ -145,7 +145,7 @@ const Intro = () => {
         </div>
 
         <div className="flex flex-col items-center w-full relative mt-[2.67vw]">
-          <RiveComponent className="w-[1000PX] h-[833PX]" />
+          <RiveComponent className="w-[133vw] h-[111vw]" />
         </div>
 
         <div className="flex flex-col w-full items-center -mt-[35vw] z-10">

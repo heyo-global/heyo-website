@@ -31,7 +31,7 @@ const Experience = () => {
           <span>AI-Powered Digital Twin </span>
           <span>of the Real World</span>
         </div>
-        <div className="flex flex-col justify-center items-center text-black  !border-b-[1px] !border-b-[#D9D9D9] ">
+        <div className="flex justify-center items-center text-black  !border-b-[1px] !border-b-[#D9D9D9] ">
           <div className="flex flex-col items-center justify-center w-[570px] gap-[30px] text24">
             <span className=" font-[500]">
               We leverage real-world geographic data and user activity to create
