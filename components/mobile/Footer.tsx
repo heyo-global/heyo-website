@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import React, { useCallback } from "react";
 
 const Footer = () => {
-  const handleClick = useCallback((url:string) => {
-    window.open(url,"_blank");
-  },[])
+  const handleClick = useCallback((url: string) => {
+    window.open(url, "_blank");
+  }, []);
   return (
     <section
       id="footer"
@@ -13,16 +13,70 @@ const Footer = () => {
       <div className="flex w-[72vw] h-full text-black font-[500] text-[3.2vw]">
         <div className="flex flex-col gap-[2vw] flex-1">
           <span className="text-[3.7vw]">RESOURCES</span>
-          <span>DOCS</span>
-          <span>BLOG</span>
-          <span>GITHUB</span>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://heyoplanet.gitbook.io/heyoplanet-docs"}
+            target={"_blank"}
+            className="!text-black"
+          >
+            DOCS
+          </motion.a>
+          {/* <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://heyoplanet.gitbook.io/heyoplanet-docs"}
+            target={"_blank"}
+          >
+            BLOG
+          </motion.a> */}
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://github.com/heyo-global/heyo-website"}
+            target={"_blank"}
+            className="!text-black"
+          >
+            GITHUB
+          </motion.a>
         </div>
         <div className="flex flex-col gap-[2vw] flex-1">
           <span className="text-[3.7vw]">CONTACT US</span>
-          <span>TALK TO A BUILDER</span>
-          <span>TWITTER</span>
-          <span>JOIN TELEGRAM</span>
-          <span>JOIN DISCORD</span>
+          {/* <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://heyoplanet.gitbook.io/heyoplanet-docs"}
+            target={"_blank"}
+          >
+            TALK TO A BUILDER
+          </motion.a> */}
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://x.com/HeyoPlanet"}
+            target={"_blank"}
+            className="!text-black"
+          >
+            TWITTER
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://t.me/heyoplanetofficial"}
+            target={"_blank"}
+            className="!text-black"
+          >
+            JOIN TELEGRAM
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            href={"https://discord.gg/afWccpKj"}
+            target={"_blank"}
+            className="!text-black"
+          >
+            JOIN DISCORD
+          </motion.a>
         </div>
       </div>
       <div className="flex justify-center items-center gap-[2.67vw] my-[6.7vw]">

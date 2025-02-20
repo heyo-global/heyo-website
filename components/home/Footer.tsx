@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Footer = () => {
@@ -15,16 +16,56 @@ const Footer = () => {
         <div className="flex w-[440px] h-full text-black font-[500] text14">
           <div className="flex flex-col gap-3 flex-1">
             <span className="text20">RESOURCES</span>
-            <span>DOCS</span>
-            <span>BLOG</span>
-            <span>GITHUB</span>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href={"https://heyoplanet.gitbook.io/heyoplanet-docs"}
+              target={"_blank"}
+              className="!text-black"
+            >
+              DOCS
+            </motion.a>
+            {/* <span>BLOG</span> */}
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href={"https://github.com/heyo-global/heyo-website"}
+              target={"_blank"}
+              className="!text-black"
+            >
+              GITHUB
+            </motion.a>
           </div>
           <div className="flex flex-col gap-3 flex-1">
             <span className="text20">CONTACT US</span>
-            <span>TALK TO A BUILDER</span>
-            <span>TWITTER</span>
-            <span>JOIN TELEGRAM</span>
-            <span>JOIN DISCORD</span>
+            {/* <span>TALK TO A BUILDER</span> */}
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href={"https://x.com/HeyoPlanet"}
+              target={"_blank"}
+              className="!text-black"
+            >
+              TWITTER
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href={"https://t.me/heyoplanetofficial"}
+              target={"_blank"}
+              className="!text-black"
+            >
+              JOIN TELEGRAM
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href={"https://discord.gg/afWccpKj"}
+              target={"_blank"}
+              className="!text-black"
+            >
+              JOIN DISCORD
+            </motion.a>
           </div>
         </div>
       </div>

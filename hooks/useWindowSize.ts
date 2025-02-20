@@ -20,7 +20,7 @@ const useWindowSize = () => {
         setWindowSize({
           width: window.innerWidth,
           height: window.innerHeight,
-          isMobile: isMobileDevice(),
+          isMobile: window.innerHeight < 678 || isMobileDevice(),
         });
       };
 
